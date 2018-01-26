@@ -92,7 +92,7 @@
   // function crateAttributeDiv(attribute) {
   // /*   return '<div  class="divAttribute"><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<div>' + attribute.Value + '</div></div>'; */
 
-  // return '<div  class="divAttribute"><span class="glyphicon glyphicon-pencil" style="position:relative;float:right;"></span><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<input style="font-size:10px;margin-top:3px;" type="text" value="' + attribute.Value + '"></div>';
+  // return '<div  class="divAttribute"><span class="glyphicon glyphicon-pencil" style="position:relative;float:right;"></span><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<input style="font-size:10px;margin-top:3px;" type="text" Value="' + attribute.Value + '"></div>';
 
   // }
 
@@ -120,358 +120,358 @@ var AnnotationCtrl = (function(){
       ],
       "annotation_rows": [{
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "Mass/Nodule"
+              "Key": "Findings",
+              "Value": "Mass/Nodule"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Upper lung zone"
+              "Key": "Subanatomy",
+              "Value": "Upper lung zone"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Right"
+              "Key": "Laterality Modifier",
+              "Value": "Right"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "Non-cavitary"
+              "Key": "Character Modifiers 1",
+              "Value": "Non-cavitary"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "Non-calcified"
+              "Key": "Character Modifiers 2",
+              "Value": "Non-calcified"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "Solitary"
+              "Key": "# Modifiers",
+              "Value": "Solitary"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "Small"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "Small"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Pleura"
+              "Key": "Major Anatomic Regions",
+              "Value": "Pleura"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Major airways"
+              "Key": "Major Anatomic Regions",
+              "Value": "Major airways"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Vasculature"
+              "Key": "Major Anatomic Regions",
+              "Value": "Vasculature"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Bones"
+              "Key": "Major Anatomic Regions",
+              "Value": "Bones"
             },
             {
-              "col-title": "Findings",
-              "value": "Scoliosis"
+              "Key": "Findings",
+              "Value": "Scoliosis"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Thoracic spine"
+              "Key": "Subanatomy",
+              "Value": "Thoracic spine"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "Left convex"
+              "Key": "Character Modifiers 1",
+              "Value": "Left convex"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Mild"
+              "Key": "Severity Modifier",
+              "Value": "Mild"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Other"
+              "Key": "Major Anatomic Regions",
+              "Value": "Other"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         }
@@ -495,358 +495,358 @@ var AnnotationCtrl = (function(){
       ],
       "annotation_rows": [{
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "Calcified hilar nodes"
+              "Key": "Findings",
+              "Value": "Calcified hilar nodes"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Hila"
+              "Key": "Subanatomy",
+              "Value": "Hila"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Left"
+              "Key": "Laterality Modifier",
+              "Value": "Left"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Pleura"
+              "Key": "Major Anatomic Regions",
+              "Value": "Pleura"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Major airways"
+              "Key": "Major Anatomic Regions",
+              "Value": "Major airways"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Enlarged cardiac silhouette"
+              "Key": "Findings",
+              "Value": "Enlarged cardiac silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Cardiac silhouette"
+              "Key": "Subanatomy",
+              "Value": "Cardiac silhouette"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Mild"
+              "Key": "Severity Modifier",
+              "Value": "Mild"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Vasculature"
+              "Key": "Major Anatomic Regions",
+              "Value": "Vasculature"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Bones"
+              "Key": "Major Anatomic Regions",
+              "Value": "Bones"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Other"
+              "Key": "Major Anatomic Regions",
+              "Value": "Other"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         }
@@ -870,460 +870,460 @@ var AnnotationCtrl = (function(){
       ],
       "annotation_rows": [{
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "Hypoaeration"
+              "Key": "Findings",
+              "Value": "Hypoaeration"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "All lung zones"
+              "Key": "Subanatomy",
+              "Value": "All lung zones"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Bilateral"
+              "Key": "Laterality Modifier",
+              "Value": "Bilateral"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Severe"
+              "Key": "Severity Modifier",
+              "Value": "Severe"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "Mass/Nodule"
+              "Key": "Findings",
+              "Value": "Mass/Nodule"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Lower lung zone"
+              "Key": "Subanatomy",
+              "Value": "Lower lung zone"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Right"
+              "Key": "Laterality Modifier",
+              "Value": "Right"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "Non-cavitary"
+              "Key": "Character Modifiers 1",
+              "Value": "Non-cavitary"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "Non-calcified"
+              "Key": "Character Modifiers 2",
+              "Value": "Non-calcified"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "Solitary"
+              "Key": "# Modifiers",
+              "Value": "Solitary"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "Moderate"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "Moderate"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Pleura"
+              "Key": "Major Anatomic Regions",
+              "Value": "Pleura"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Major airways"
+              "Key": "Major Anatomic Regions",
+              "Value": "Major airways"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Enlarged cardiac silhouette"
+              "Key": "Findings",
+              "Value": "Enlarged cardiac silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Cardiac silhouette"
+              "Key": "Subanatomy",
+              "Value": "Cardiac silhouette"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Mild"
+              "Key": "Severity Modifier",
+              "Value": "Mild"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Obscuration of the diaphragmatic silhouette"
+              "Key": "Findings",
+              "Value": "Obscuration of the diaphragmatic silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Hemidiaphragm"
+              "Key": "Subanatomy",
+              "Value": "Hemidiaphragm"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "left"
+              "Key": "Laterality Modifier",
+              "Value": "left"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "Small"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "Small"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Vasculature"
+              "Key": "Major Anatomic Regions",
+              "Value": "Vasculature"
             },
             {
-              "col-title": "Findings",
-              "value": "Vascular redistribution"
+              "Key": "Findings",
+              "Value": "Vascular redistribution"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Pulmonary veins"
+              "Key": "Subanatomy",
+              "Value": "Pulmonary veins"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Bilateral"
+              "Key": "Laterality Modifier",
+              "Value": "Bilateral"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Moderate"
+              "Key": "Severity Modifier",
+              "Value": "Moderate"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Bones"
+              "Key": "Major Anatomic Regions",
+              "Value": "Bones"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Other"
+              "Key": "Major Anatomic Regions",
+              "Value": "Other"
             },
             {
-              "col-title": "Findings",
-              "value": "EKG leads and wires"
+              "Key": "Findings",
+              "Value": "EKG leads and wires"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Chest wall"
+              "Key": "Subanatomy",
+              "Value": "Chest wall"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Bilateral"
+              "Key": "Laterality Modifier",
+              "Value": "Bilateral"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         }
@@ -1347,409 +1347,409 @@ var AnnotationCtrl = (function(){
       ],
       "annotation_rows": [{
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "Enlarged hilum"
+              "Key": "Findings",
+              "Value": "Enlarged hilum"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Hila"
+              "Key": "Subanatomy",
+              "Value": "Hila"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Bilateral"
+              "Key": "Laterality Modifier",
+              "Value": "Bilateral"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Moderate"
+              "Key": "Severity Modifier",
+              "Value": "Moderate"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Pleura"
+              "Key": "Major Anatomic Regions",
+              "Value": "Pleura"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Major airways"
+              "Key": "Major Anatomic Regions",
+              "Value": "Major airways"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Obscuration of the diaphragmatic silhouette"
+              "Key": "Findings",
+              "Value": "Obscuration of the diaphragmatic silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Hemidiaphragm"
+              "Key": "Subanatomy",
+              "Value": "Hemidiaphragm"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Left"
+              "Key": "Laterality Modifier",
+              "Value": "Left"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "Moderate"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "Moderate"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Enlarged cardiac silhouette"
+              "Key": "Findings",
+              "Value": "Enlarged cardiac silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Cardiac silhouette"
+              "Key": "Subanatomy",
+              "Value": "Cardiac silhouette"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Moderate"
+              "Key": "Severity Modifier",
+              "Value": "Moderate"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Vasculature"
+              "Key": "Major Anatomic Regions",
+              "Value": "Vasculature"
             },
             {
-              "col-title": "Findings",
-              "value": "Vascular redistribution"
+              "Key": "Findings",
+              "Value": "Vascular redistribution"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Pulmonary veins"
+              "Key": "Subanatomy",
+              "Value": "Pulmonary veins"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Bilateral"
+              "Key": "Laterality Modifier",
+              "Value": "Bilateral"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Moderate"
+              "Key": "Severity Modifier",
+              "Value": "Moderate"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Bones"
+              "Key": "Major Anatomic Regions",
+              "Value": "Bones"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Other"
+              "Key": "Major Anatomic Regions",
+              "Value": "Other"
             },
             {
-              "col-title": "Findings",
-              "value": "? Some subdiaphragmatic abnormality"
+              "Key": "Findings",
+              "Value": "? Some subdiaphragmatic abnormality"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         }
@@ -1773,358 +1773,358 @@ var AnnotationCtrl = (function(){
       ],
       "annotation_rows": [{
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Lungs"
+              "Key": "Major Anatomic Regions",
+              "Value": "Lungs"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Pleura"
+              "Key": "Major Anatomic Regions",
+              "Value": "Pleura"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Major airways"
+              "Key": "Major Anatomic Regions",
+              "Value": "Major airways"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Mediastinum"
+              "Key": "Major Anatomic Regions",
+              "Value": "Mediastinum"
             },
             {
-              "col-title": "Findings",
-              "value": "Enlarged cardiac silhouette"
+              "Key": "Findings",
+              "Value": "Enlarged cardiac silhouette"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "Cardiac silhouette"
+              "Key": "Subanatomy",
+              "Value": "Cardiac silhouette"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "Left"
+              "Key": "Laterality Modifier",
+              "Value": "Left"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "Moderate"
+              "Key": "Severity Modifier",
+              "Value": "Moderate"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "Moderate"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "Moderate"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Vasculature"
+              "Key": "Major Anatomic Regions",
+              "Value": "Vasculature"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Bones"
+              "Key": "Major Anatomic Regions",
+              "Value": "Bones"
             },
             {
-              "col-title": "Findings",
-              "value": "None"
+              "Key": "Findings",
+              "Value": "None"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         },
         {
           "row": [{
-              "col-title": "Major Anatomic Regions",
-              "value": "Other"
+              "Key": "Major Anatomic Regions",
+              "Value": "Other"
             },
             {
-              "col-title": "Findings",
-              "value": "? Dilated bowels"
+              "Key": "Findings",
+              "Value": "? Dilated bowels"
             },
             {
-              "col-title": "Subanatomy",
-              "value": "NA"
+              "Key": "Subanatomy",
+              "Value": "NA"
             },
             {
-              "col-title": "Laterality Modifier",
-              "value": "NA"
+              "Key": "Laterality Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 1",
-              "value": "NA"
+              "Key": "Location Modifier 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Location Modifier 2",
-              "value": "NA"
+              "Key": "Location Modifier 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 1",
-              "value": "NA"
+              "Key": "Character Modifiers 1",
+              "Value": "NA"
             },
             {
-              "col-title": "Character Modifiers 2",
-              "value": "NA"
+              "Key": "Character Modifiers 2",
+              "Value": "NA"
             },
             {
-              "col-title": "Severity Modifier",
-              "value": "NA"
+              "Key": "Severity Modifier",
+              "Value": "NA"
             },
             {
-              "col-title": "# Modifiers",
-              "value": "NA"
+              "Key": "# Modifiers",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Qualitative",
-              "value": "NA"
+              "Key": "Size Modifiers Qualitative",
+              "Value": "NA"
             },
             {
-              "col-title": "Size Modifiers Quantitative",
-              "value": "NA"
+              "Key": "Size Modifiers Quantitative",
+              "Value": "NA"
             }
           ]
         }
@@ -2145,11 +2145,11 @@ return {
         // Go through each annotation row
         for (var i = 0; i < annotationRows.length; i++) {
             var rowObj = annotationRows[i];
-            // Go through each 'col-title' 'value' pair in annotation row 
+            // Go through each 'Key' 'Value' pair in annotation row 
             for (var j = 0; j < rowObj['row'].length; j++) {
                 var cellObj = rowObj['row'][j];
-                // If col-title === Findings value != None
-                if (cellObj['col-title'] === 'Findings' && cellObj['value'] !== 'None') {
+                // If Key === Findings Value != None
+                if (cellObj['Key'] === 'Findings' && cellObj['Value'] !== 'None') {
                     // Add row to finalRows & break
                     filteredRows.push(rowObj);
                     break;
@@ -2165,12 +2165,40 @@ return {
 /* UIController */
 var UICtrl = (function(){
 
-  var createAttributeDiv = function () {
-
-  };
-
   return {
-    createFindingDivs: function (findingRows) {
+    createAttributeDiv: function (attribute, parentDivID) {
+
+      // AttributeDiv
+      var attributeDiv = document.createElement('div');
+      attributeDiv.setAttribute('class', `${parentDivID} divAttribute`);
+      attributeDiv.setAttribute('id', attribute.Key);
+
+      // Heading inside AttributeDiv 
+      var attributeHeading = document.createElement('div');
+      attributeHeading.style.fontSize = '8px';
+      attributeHeading.style.color = '#c14343';
+      attributeHeading.textContent = attribute.Key;
+
+      // Edit Pencil inside AttributeDiv
+      var editPencil = document.createElement('span');
+      editPencil.setAttribute('class', 'glyphicon glyphicon-pencil');
+      editPencil.style.position = 'relative';
+      editPencil.style.cssFloat = 'right';
+
+      // Autocomplete Input field inside AttributeDiv
+      var attributeInput = document.createElement('input');
+      attributeInput.setAttribute('type', 'text');
+      attributeInput.setAttribute('value', attribute.Value);
+      attributeInput.style.fontSize = '10px';
+      attributeInput.style.marginTop = '3px';
+
+      attributeDiv.appendChild(editPencil);
+      attributeDiv.appendChild(attributeHeading);
+      attributeDiv.appendChild(attributeInput);
+
+      return attributeDiv;
+    },
+    createFindingDiv: function (findingRows) {
       if (findingRows.length > 0) {
         for ( var i = 0; i < findingRows.length; i++) {
           var findingsDiv = document.createElement('div');
@@ -2186,6 +2214,12 @@ var UICtrl = (function(){
           closeFindingsAnchor.textContent = 'x';
     
           findingsDiv.appendChild(closeFindingsAnchor);
+
+          for ( var j = 0; j < findingRows[i]['row'].length; j++) {
+            var attributeKeyValue = findingRows[i]['row'][j];
+            var attributeDiv = UICtrl.createAttributeDiv(attributeKeyValue, findingsRowID);
+            findingsDiv.appendChild(attributeDiv);
+          }
           
           var containerDiv = document.getElementById('containerDiv');
           containerDiv.appendChild(findingsDiv);
@@ -2205,7 +2239,7 @@ var controller = (function() {
       var cxr_key = '152ba901-12f8-44aa-a60e-c5217e1e9497';
       var findingRows = AnnotationCtrl.getRows(cxr_key);
 
-      UICtrl.createFindingDivs(findingRows);
+      UICtrl.createFindingDiv(findingRows);
     }
   };
 })(UICtrl, AnnotationCtrl);
