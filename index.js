@@ -2180,10 +2180,10 @@ var UICtrl = (function(){
       attributeHeading.textContent = attribute.Key;
 
       // Edit Pencil inside AttributeDiv
-      var editPencil = document.createElement('span');
-      editPencil.setAttribute('class', 'glyphicon glyphicon-pencil');
-      editPencil.style.position = 'relative';
-      editPencil.style.cssFloat = 'right';
+      // var editPencil = document.createElement('span');
+      // editPencil.setAttribute('class', 'glyphicon glyphicon-pencil');
+      // editPencil.style.position = 'relative';
+      // editPencil.style.cssFloat = 'right';
 
       // Autocomplete Input field inside AttributeDiv
       var attributeInput = document.createElement('input');
@@ -2192,7 +2192,7 @@ var UICtrl = (function(){
       attributeInput.style.fontSize = '10px';
       attributeInput.style.marginTop = '3px';
 
-      attributeDiv.appendChild(editPencil);
+      // attributeDiv.appendChild(editPencil);
       attributeDiv.appendChild(attributeHeading);
       attributeDiv.appendChild(attributeInput);
 
