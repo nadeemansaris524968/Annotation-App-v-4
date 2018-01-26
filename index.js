@@ -89,12 +89,12 @@
 //     return result + "</div>";
 //   }
 
-//   function crateAttributeDiv(attribute) {
-//   /*   return '<div  class="divAttribute"><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<div>' + attribute.Value + '</div></div>'; */
+  // function crateAttributeDiv(attribute) {
+  // /*   return '<div  class="divAttribute"><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<div>' + attribute.Value + '</div></div>'; */
 
-//   return '<div  class="divAttribute"><span class="glyphicon glyphicon-pencil" style="position:relative;float:right;"></span><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<input style="font-size:10px;margin-top:3px;" type="text" value="' + attribute.Value + '"></div>';
+  // return '<div  class="divAttribute"><span class="glyphicon glyphicon-pencil" style="position:relative;float:right;"></span><div style="font-size:8px;color:#c14343;">' + attribute.Key + '</div>' + '<input style="font-size:10px;margin-top:3px;" type="text" value="' + attribute.Value + '"></div>';
 
-//   }
+  // }
 
 //   $("#containerDiv").append(createFindingDiv(imageAnnotation.Findings[0]));
 //   $("#containerDiv").append(createFindingDiv(imageAnnotation.Findings[1]));
@@ -2170,23 +2170,28 @@ var UICtrl = (function(){
   };
 
   return {
-    createFindingDivs: function (findingRow) {
-      var findingsDiv = document.createElement('div');
-      findingsDiv.setAttribute('class', 'alert alert-info alert-dismissable');
-      findingsDiv.style.overflow = 'hidden';
-
-      var closeFindingsAnchor = document.createElement('a');
-      closeFindingsAnchor.setAttribute('href', '#');
-      closeFindingsAnchor.setAttribute('class', 'close');
-      closeFindingsAnchor.setAttribute('data-dismiss', 'alert');
-      closeFindingsAnchor.setAttribute('aria-label', 'close');
-      closeFindingsAnchor.textContent = 'x';
-
-      findingsDiv.appendChild(closeFindingsAnchor);
-      
-      var containerDiv = document.getElementById('containerDiv');
-      containerDiv.appendChild(findingsDiv);
-      console.log(findingsDiv);
+    createFindingDivs: function (findingRows) {
+      if (findingRows.length > 0) {
+        for ( var i = 0; i < findingRows.length; i++) {
+          var findingsDiv = document.createElement('div');
+          var findingsRowID = 'finding_row_' + i;
+          findingsDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingsRowID}`);
+          findingsDiv.style.overflow = 'hidden';
+    
+          var closeFindingsAnchor = document.createElement('a');
+          closeFindingsAnchor.setAttribute('href', '#');
+          closeFindingsAnchor.setAttribute('class', 'close');
+          closeFindingsAnchor.setAttribute('data-dismiss', 'alert');
+          closeFindingsAnchor.setAttribute('aria-label', 'close');
+          closeFindingsAnchor.textContent = 'x';
+    
+          findingsDiv.appendChild(closeFindingsAnchor);
+          
+          var containerDiv = document.getElementById('containerDiv');
+          containerDiv.appendChild(findingsDiv);
+          console.log(findingsDiv);
+        }
+      } 
     }
   }
 })();
