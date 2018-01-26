@@ -2198,6 +2198,7 @@ var UICtrl = (function(){
 
       return attributeDiv;
     },
+    
     createFindingDiv: function (findingRows) {
       if (findingRows.length > 0) {
         for ( var i = 0; i < findingRows.length; i++) {
