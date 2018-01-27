@@ -2,11 +2,11 @@
 var UICtrl = (function () {
 
     var DOMStrings = {
-        findingNum: 'finding_num_',
-        attributeNum: 'attribute_num_'
+        findingNumClass: 'finding_num_',
+        attributeNumId: 'attribute_num_'
     }
 
-    var createAttriveDivs = function (attribute, findingNumClass, attributeNumClass) {
+    var createAttriveDivs = function (attribute, findingNumClass, attributeNumId) {
         var attributeDiv = document.createElement('div');
         attributeDiv.classList.add('divAttribute');
 
@@ -17,8 +17,9 @@ var UICtrl = (function () {
 
         var attributeInput = document.createElement('input');
         attributeInput.setAttribute('type', 'text');
-        attributeInput.setAttribute('value', attribute.Value);        
-        attributeInput.setAttribute('class',`${findingNumClass} ${attributeNumClass}`);
+        attributeInput.setAttribute('value', attribute.Value);
+        attributeInput.setAttribute('class', `${findingNumClass}`);
+        attributeInput.setAttribute('id', `${attributeNumId}`);
 
         attributeDiv.appendChild(attributeHeading);
         attributeDiv.appendChild(attributeInput);
@@ -32,7 +33,7 @@ var UICtrl = (function () {
                 // Create FindingDiv
                 var findingDiv = document.createElement('div');
 
-                var findingNumClass = DOMStrings.findingNum + findingIndex;
+                var findingNumClass = DOMStrings.findingNumClass + findingIndex;
                 findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
                 findingDiv.style.overflow = 'hidden';
 
@@ -48,8 +49,8 @@ var UICtrl = (function () {
                 var findingAttributes = eachFinding['row'];
                 findingAttributes.forEach(function (eachAttribute, attributeIndex) {
                     // Create AttributeDiv     
-                    var attributeNumClass = DOMStrings.attributeNum + attributeIndex;               
-                    var attributeDiv = createAttriveDivs(eachAttribute, findingNumClass, attributeNumClass);
+                    var attributeNumId = DOMStrings.attributeNumId + attributeIndex;
+                    var attributeDiv = createAttriveDivs(eachAttribute, findingNumClass, attributeNumId);
 
                     findingDiv.appendChild(attributeDiv);
                 });
@@ -62,6 +63,45 @@ var UICtrl = (function () {
     return {
         createDivs: function (findings) {
             createFindingsDivs(findings);
+        },
+        setupAnatomy: function (searchData, element) {
+            var elementId = '#' + element.id;
+            var elementClass = '.' + element.className;
+            var options = {
+                data: searchData,
+                listLocation: function (element) {
+                    return element["Major Anatomic Region"];
+                },
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50,
+                    onChooseEvent: function () {
+                        var majorAnatomy = $(elementId).val();
+
+                        searchData["Major Anatomic Region"].find(function (element) {
+                            if (element.name === majorAnatomy) {
+                                var findings = element["Findings"];
+
+                                // Go through current element's class siblings and update setupFinding                                
+                                var currentClassEls = document.querySelectorAll('input' + elementClass);
+                                currentClassEls.forEach(function (el) {
+                                    if (el.id === 'attribute_num_1') {
+                                        console.log('Findings input. setting finding with options.');
+                                        // UICtrl.setupFindings(findings);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                },
+                theme: "square"
+            };
+
+            // Turning input to easyAutocomplete
+            $(elementId).easyAutocomplete(options);
         }
     };
 })();
@@ -76,6 +116,12 @@ var appCtrl = (function () {
             var findings = AnnotationCtrl.getRows(cxr_key);
 
             UICtrl.createDivs(findings);
+
+            var finding_num_0 = 'finding_num_0';
+            var finding_num_0_NodeList = document.querySelectorAll('input.' + finding_num_0);
+            finding_num_0_NodeList.forEach(function (element, elIndex) {
+                UICtrl.setupAnatomy(SearchCtrl.getSearchData(), element);
+            });
         }
     }
 })(UICtrl, AnnotationCtrl, SearchCtrl);
