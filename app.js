@@ -64,6 +64,67 @@ var UICtrl = (function () {
         createDivs: function (findings) {
             createFindingsDivs(findings);
         },
+        // Turning Laterality input to easyAutocomplete
+        setupLaterality: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Subanatomy input to easyAutocomplete
+        setupSubAnatomy: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: 'name',
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50,
+                    onChooseEvent: function () {
+                        var choseSubAnatomy = $(inputId).val();
+                        searchData.find(function (subAnatomy) {
+                            if (subAnatomy.name === choseSubAnatomy) {
+                                var laterality = subAnatomy["Laterality Modifier"];
+                                var location_1 = subAnatomy["Location Modifier 1"];
+                                var location_2 = subAnatomy["Location Modifier 2"];
+                                var character_1 = subAnatomy["Character Modifiers 1"];
+                                var character_2 = subAnatomy["Character Modifiers 2"];
+                                var severity = subAnatomy["Severity Modifier"];
+                                var numModifier = subAnatomy["# Modifiers"];
+                                var size_1 = subAnatomy["Size Modifiers Qualitative"];
+                                var size_2 = subAnatomy["Size Modifiers Quantitative"];
+
+                                // Go through current element's class siblings and setup accordingly for input
+                                var currentClassInputs = document.querySelectorAll('input' + inputClass);
+                                currentClassInputs.forEach(function (input) {
+                                    if (input.id === 'attribute_num_3') {
+                                        UICtrl.setupLaterality(laterality, input);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                },
+                theme: 'square'
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Finding input to easyAutocomplete
         setupFindings: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
             var inputClass = '.' + inputEl.className;
@@ -77,16 +138,15 @@ var UICtrl = (function () {
                     maxNumberOfElements: 50,
                     onChooseEvent: function () {
                         var chosenFinding = $(inputId).val();
-                        searchData.find(function(finding){
+                        searchData.find(function (finding) {
                             if (finding.name === chosenFinding) {
                                 var subAnatomies = finding["Subanatomy"];
-                                
+
                                 // Go through current element's class siblings and update setupSubanatomy
                                 var currentClassInputs = document.querySelectorAll('input' + inputClass);
-                                currentClassInputs.forEach(function(input) {
+                                currentClassInputs.forEach(function (input) {
                                     if (input.id === 'attribute_num_2') {
-                                        // console.log('Finding onChoose. Found subanatomy: ', JSON.stringify(subAnatomies, undefined, 2));
-                                        // UICtrl.setupSubAnatomy(findings, el);
+                                        UICtrl.setupSubAnatomy(subAnatomies, input);
                                     }
                                 });
                             }
@@ -96,9 +156,10 @@ var UICtrl = (function () {
                 theme: 'square'
             };
 
-            // Turning input to easyAutocomplete
             $(inputId).easyAutocomplete(options);
         },
+        // Turning Anatomy input to easyAutocomplete
+        // onChoose others will be setup
         setupAnatomy: function (searchData, element) {
             var elementId = '#' + element.id;
             var elementClass = '.' + element.className;
@@ -124,7 +185,6 @@ var UICtrl = (function () {
                                 var currentClassEls = document.querySelectorAll('input' + elementClass);
                                 currentClassEls.forEach(function (el) {
                                     if (el.id === 'attribute_num_1') {
-                                        // console.log('Major Anatomy onChoose. Found finding: ', JSON.stringify(findings, undefined, 2));
                                         UICtrl.setupFindings(findings, el);
                                     }
                                 });
@@ -135,7 +195,6 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            // Turning input to easyAutocomplete
             $(elementId).easyAutocomplete(options);
         }
     };
