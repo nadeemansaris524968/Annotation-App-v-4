@@ -45,3 +45,12 @@ input {
   padding-right: 5px;
   background: #cee1ff;
 }
+
+.easy-autocomplete-container {
+  position: static;
+  z-index: 0;
+  max-height: 300px;
+  overflow: auto; 
+  overflow-y: auto; 
+  overflow-x:hidden; 
+}

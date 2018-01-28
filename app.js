@@ -64,6 +64,41 @@ var UICtrl = (function () {
         createDivs: function (findings) {
             createFindingsDivs(findings);
         },
+        setupFindings: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: 'name',
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50,
+                    onChooseEvent: function () {
+                        var chosenFinding = $(inputId).val();
+                        searchData.find(function(finding){
+                            if (finding.name === chosenFinding) {
+                                var subAnatomies = finding["Subanatomy"];
+                                
+                                // Go through current element's class siblings and update setupSubanatomy
+                                var currentClassInputs = document.querySelectorAll('input' + inputClass);
+                                currentClassInputs.forEach(function(input) {
+                                    if (input.id === 'attribute_num_2') {
+                                        // console.log('Finding onChoose. Found subanatomy: ', JSON.stringify(subAnatomies, undefined, 2));
+                                        // UICtrl.setupSubAnatomy(findings, el);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                },
+                theme: 'square'
+            };
+
+            // Turning input to easyAutocomplete
+            $(inputId).easyAutocomplete(options);
+        },
         setupAnatomy: function (searchData, element) {
             var elementId = '#' + element.id;
             var elementClass = '.' + element.className;
@@ -89,8 +124,8 @@ var UICtrl = (function () {
                                 var currentClassEls = document.querySelectorAll('input' + elementClass);
                                 currentClassEls.forEach(function (el) {
                                     if (el.id === 'attribute_num_1') {
-                                        console.log('Findings input. setting finding with options.');
-                                        // UICtrl.setupFindings(findings);
+                                        // console.log('Major Anatomy onChoose. Found finding: ', JSON.stringify(findings, undefined, 2));
+                                        UICtrl.setupFindings(findings, el);
                                     }
                                 });
                             }
@@ -120,7 +155,11 @@ var appCtrl = (function () {
             var finding_num_0 = 'finding_num_0';
             var finding_num_0_NodeList = document.querySelectorAll('input.' + finding_num_0);
             finding_num_0_NodeList.forEach(function (element, elIndex) {
-                UICtrl.setupAnatomy(SearchCtrl.getSearchData(), element);
+                // Only setting up anatomy input
+                // Rest of the fields will be setup onChoose
+                if (element.id === 'attribute_num_0') {
+                    UICtrl.setupAnatomy(SearchCtrl.getSearchData(), element);
+                }
             });
         }
     }
