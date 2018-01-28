@@ -64,6 +64,42 @@ var UICtrl = (function () {
         createDivs: function (findings) {
             createFindingsDivs(findings);
         },
+        // Turning Location_2 input to easyAutocomplete
+        setupLocation_2: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Location_1 input to easyAutocomplete
+        setupLocation_1: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
         // Turning Laterality input to easyAutocomplete
         setupLaterality: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
@@ -113,6 +149,12 @@ var UICtrl = (function () {
                                 currentClassInputs.forEach(function (input) {
                                     if (input.id === 'attribute_num_3') {
                                         UICtrl.setupLaterality(laterality, input);
+                                    }
+                                    if (input.id === 'attribute_num_4') {
+                                        UICtrl.setupLocation_1(location_1, input);
+                                    }
+                                    if (input.id === 'attribute_num_5') {
+                                        UICtrl.setupLocation_2(location_2, input);
                                     }
                                 });
                             }
