@@ -6,7 +6,7 @@ var UICtrl = (function () {
         attributeNumId: 'attribute_num_'
     }
 
-    var createAttriveDivs = function (attribute, findingNumClass, attributeNumId) {
+    var createAttriveDiv = function (attribute, findingNumClass, attributeNumId) {
         var attributeDiv = document.createElement('div');
         attributeDiv.classList.add('divAttribute');
 
@@ -33,24 +33,24 @@ var UICtrl = (function () {
                 // Create FindingDiv
                 var findingDiv = document.createElement('div');
 
-                var findingNumClass = DOMStrings.findingNumClass + findingIndex;
+                var findingNumClass = DOMStrings.findingNumClass;
                 findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
                 findingDiv.style.overflow = 'hidden';
 
-                var closeFindingDiv = document.createElement("a");
-                closeFindingDiv.setAttribute("href", "#");
-                closeFindingDiv.setAttribute("class", "close");
-                closeFindingDiv.setAttribute("data-dismiss", "alert");
-                closeFindingDiv.setAttribute("aria-label", "close");
-                closeFindingDiv.textContent = "x";
+                var closeFindingDivAnchor = document.createElement("a");
+                closeFindingDivAnchor.setAttribute("href", "#");
+                closeFindingDivAnchor.setAttribute("class", "close");
+                closeFindingDivAnchor.setAttribute("data-dismiss", "alert");
+                closeFindingDivAnchor.setAttribute("aria-label", "close");
+                closeFindingDivAnchor.textContent = "x";
 
-                findingDiv.appendChild(closeFindingDiv);
+                findingDiv.appendChild(closeFindingDivAnchor);
 
-                var findingAttributes = eachFinding['row'];
-                findingAttributes.forEach(function (eachAttribute, attributeIndex) {
-                    // Create AttributeDiv     
-                    var attributeNumId = DOMStrings.attributeNumId + attributeIndex;
-                    var attributeDiv = createAttriveDivs(eachAttribute, findingNumClass, attributeNumId);
+                var findingRow = eachFinding['row'];
+                findingRow.forEach(function (eachAttribute, attributeIndex) {
+                    // Create AttributeDiv with index 0, 1, 2 ... etc  
+                    var attributeId = DOMStrings.attributeNumId + attributeIndex;
+                    var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
 
                     findingDiv.appendChild(attributeDiv);
                 });
