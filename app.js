@@ -64,6 +64,114 @@ var UICtrl = (function () {
         createDivs: function (findings) {
             createFindingsDivs(findings);
         },
+        // Turning Size_2 input to easyAutocomplete
+        setupSize_2: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Size_1 input to easyAutocomplete
+        setupSize_1: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning NumModifier input to easyAutocomplete
+        setupNumModifier: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Severity input to easyAutocomplete
+        setupSeverity: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Character_2 input to easyAutocomplete
+        setupCharacter_2: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
+        // Turning Character_1 input to easyAutocomplete
+        setupCharacter_1: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
+            var options = {
+                data: searchData,
+                getValue: "name",
+                list: {
+                    match: {
+                        enabled: true
+                    },
+                    maxNumberOfElements: 50
+                },
+                theme: "square"
+            };
+
+            $(inputId).easyAutocomplete(options);
+        },
         // Turning Location_2 input to easyAutocomplete
         setupLocation_2: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
@@ -155,6 +263,24 @@ var UICtrl = (function () {
                                     }
                                     if (input.id === 'attribute_num_5') {
                                         UICtrl.setupLocation_2(location_2, input);
+                                    }
+                                    if (input.id === 'attribute_num_6') {
+                                        UICtrl.setupCharacter_1(character_1, input);
+                                    }
+                                    if (input.id === 'attribute_num_7') {
+                                        UICtrl.setupCharacter_2(character_2, input);
+                                    }
+                                    if (input.id === 'attribute_num_8') {
+                                        UICtrl.setupSeverity(severity, input);
+                                    }
+                                    if (input.id === 'attribute_num_9') {
+                                        UICtrl.setupNumModifier(numModifier, input);
+                                    }
+                                    if (input.id === 'attribute_num_10') {
+                                        UICtrl.setupSize_1(size_1, input);
+                                    }
+                                    if (input.id === 'attribute_num_11') {
+                                        UICtrl.setupSize_2(size_2, input);
                                     }
                                 });
                             }
