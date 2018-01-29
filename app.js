@@ -449,6 +449,7 @@ var appCtrl = (function () {
         init: function () {
             console.log('Application started');
 
+            // First image findings array in annotationCtrl.js
             var cxr_key = "152ba901-12f8-44aa-a60e-c5217e1e9497";
             var findings = AnnotationCtrl.getRows(cxr_key);
 
