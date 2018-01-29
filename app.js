@@ -137,40 +137,30 @@ var UICtrl = (function () {
         // Getter
         getAllFindings: function (callBack) {
             // Going through all findingsDiv with class finding_num_x
-            var annotationRows = [];
+            var findingsParentArray = [];
             var findingsDivNodeList = document.querySelectorAll('div[class*="finding_num_"]');
 
             findingsDivNodeList.forEach(function (finding) {
                 // Grabbing all input fields from each findingsDiv
                 var inputNodeList = $(finding).find('input');
-                var row = [];
+                var findingsChildArray = [];
 
                 for (var i = 0; i < inputNodeList.length; i++) {
                     var key = inputNodeList[i].name;
                     var value = inputNodeList[i].value;
                     var attributeObj = { Key: key, Value: value };
-                    /*
-                        row: [
-                            { Key: 'Major Anatomy', Value: 'Lungs' },
-                            { Key: 'Major Anatomy', Value: 'Lungs' } etc
-                        ]
-                    */
-                    row.push(attributeObj);
+                    /*[
+                        { Key: 'Major Anatomy', Value: 'Lungs' },
+                        { Key: 'Major Anatomy', Value: 'Lungs' } etc
+                    ]*/
+                    findingsChildArray.push(attributeObj);
                 }
-                var annotationRowObj = {
-                    row: row
-                }
-                /*
-                    annotationRows [
-                        { row: [] },
-                        { row: [] } etc
-                    ]
-                */
-                annotationRows.push(annotationRowObj);
+
+                findingsParentArray.push(findingsChildArray);
             });
             // ************** ************** ************** //
-            callBack(annotationRows);
-            console.log(annotationRows);
+            // callBack(findingsParentArray);
+            console.log(JSON.stringify(findingsParentArray, undefined, 2));
         },
         setupEasyAutocomplete: function (inputClass) {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
@@ -525,12 +515,169 @@ var appCtrl = (function () {
         init: function () {
             console.log('Application started');
 
+            // Placeholder JSFiddle Finding Structure
             var imageAnnotation = {
                 "ImageName": "1.png",
                 "SampleID": "1234-5678-9090",
                 "Width": 512,
                 "Height": 512,
                 "Findings": [
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Lungs"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "Mass/Nodule"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "Upper lung zone"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "Right"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "Non-cavitary"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "Non-calcified"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "Solitary"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "Small"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ],
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Lungs"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "Mass/Nodule"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "Upper lung zone"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "Right"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "Non-cavitary"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "Non-calcified"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "Solitary"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "Small"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ],
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Lungs"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "Mass/Nodule"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "Upper lung zone"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "Right"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "Non-cavitary"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "Non-calcified"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "Solitary"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "Small"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ],
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Lungs"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "Mass/Nodule"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "Upper lung zone"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "Right"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "Non-cavitary"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "Non-calcified"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "Solitary"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "Small"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ],
                     [
                         {
                             "Key": "Major Anatomic Regions",
@@ -610,8 +757,8 @@ var appCtrl = (function () {
                         }
                     ]
                 ]
-            }
-            // Send imageAnnotation obj to Findings [] using AnnotationCtrl.getRows()
+            };
+            // Send imageAnnotation obj to exteact Findings [] using AnnotationCtrl.getRows()
             var findings = AnnotationCtrl.getRows(imageAnnotation);
 
             // Setter
