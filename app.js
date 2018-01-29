@@ -37,7 +37,7 @@ var UICtrl = (function () {
         attributeInput.setAttribute('type', 'text');
         attributeInput.setAttribute('value', attribute.Value);
         attributeInput.setAttribute('class', `${findingNumClass}`);
-        attributeInput.setAttribute('id', `${findingNumClass} ${attributeNumId}`);
+        attributeInput.setAttribute('id', `${findingNumClass}${attributeNumId}`);
 
         attributeDiv.appendChild(attributeHeading);
         attributeDiv.appendChild(attributeInput);
@@ -329,31 +329,31 @@ var UICtrl = (function () {
                                 // Go through current element's class siblings and setup accordingly for input
                                 var currentClassInputs = document.querySelectorAll('input' + inputClass);
                                 currentClassInputs.forEach(function (input) {
-                                    if (input.id === 'attribute_num_3') {
+                                    if (input.id.includes('attribute_num_3')) {
                                         UICtrl.setupLaterality(laterality, input);
                                     }
-                                    if (input.id === 'attribute_num_4') {
+                                    if (input.id.includes('attribute_num_4')) {
                                         UICtrl.setupLocation_1(location_1, input);
                                     }
-                                    if (input.id === 'attribute_num_5') {
+                                    if (input.id.includes('attribute_num_5')) {
                                         UICtrl.setupLocation_2(location_2, input);
                                     }
-                                    if (input.id === 'attribute_num_6') {
+                                    if (input.id.includes('attribute_num_6')) {
                                         UICtrl.setupCharacter_1(character_1, input);
                                     }
-                                    if (input.id === 'attribute_num_7') {
+                                    if (input.id.includes('attribute_num_7')) {
                                         UICtrl.setupCharacter_2(character_2, input);
                                     }
-                                    if (input.id === 'attribute_num_8') {
+                                    if (input.id.includes('attribute_num_8')) {
                                         UICtrl.setupSeverity(severity, input);
                                     }
-                                    if (input.id === 'attribute_num_9') {
+                                    if (input.id.includes('attribute_num_9')) {
                                         UICtrl.setupNumModifier(numModifier, input);
                                     }
-                                    if (input.id === 'attribute_num_10') {
+                                    if (input.id.includes('attribute_num_10')) {
                                         UICtrl.setupSize_1(size_1, input);
                                     }
-                                    if (input.id === 'attribute_num_11') {
+                                    if (input.id.includes('attribute_num_11')) {
                                         UICtrl.setupSize_2(size_2, input);
                                     }
                                 });
@@ -387,7 +387,7 @@ var UICtrl = (function () {
                                 // Go through current element's class siblings and update setupSubanatomy
                                 var currentClassInputs = document.querySelectorAll('input' + inputClass);
                                 currentClassInputs.forEach(function (input) {
-                                    if (input.id === 'attribute_num_2') {
+                                    if (input.id.includes('attribute_num_2')) {
                                         UICtrl.setupSubAnatomy(subAnatomies, input);
                                     }
                                 });
@@ -427,7 +427,7 @@ var UICtrl = (function () {
                                 // and update setupFinding
                                 var currentClassEls = document.querySelectorAll('input' + elementClass);
                                 currentClassEls.forEach(function (el) {
-                                    if (el.id === 'attribute_num_1') {
+                                    if (el.id.includes('attribute_num_1')) {
                                         UICtrl.setupFindings(findings, el);
                                     }
                                 });
@@ -463,13 +463,10 @@ var appCtrl = (function () {
                 inputElList.forEach(function (inputEl, index) {
                     // Only setting up anatomy input
                     // Rest of the fields will be setup onChoose
-                    var inputElId = inputEl.id
-                    if (inputEl.id.endsWith('attribute_num_0')) {
-                        console.log('found anatomy class: \n' + inputEl.className + ', id: ' + inputEl.id);
+                    if (inputEl.id.includes('attribute_num_0')) {
                         UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
                     }
                 });
-                console.log(findingDiv);
             });
         }
     }
