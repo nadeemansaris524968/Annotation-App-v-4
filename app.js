@@ -1,6 +1,7 @@
 /* UIController */
 var UICtrl = (function () {
 
+    // Just to get numbered findingDivs
     var totalCurrentFindings = 0;
 
     var emptyAttributes = [
@@ -98,7 +99,7 @@ var UICtrl = (function () {
             // Create FindingDiv
             var findingDiv = document.createElement('div');
 
-            // Just use totalFindings since it's already incremented since it 
+            // Just use totalFindings since it's already incremented since it was
             // incremented when creating the default finding rows from the supplied data
             var findingNumClass = DOMStrings.findingNumClass + totalCurrentFindings;
             findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
@@ -137,12 +138,38 @@ var UICtrl = (function () {
         // Getter
         getAllFindings: function () {
             // Going through all findingsDiv with class finding_num_x
+            var annotationRows = [];
             var findingsDivNodeList = document.querySelectorAll('div[class*="finding_num_"]');
-            findingsDivNodeList.forEach(function(finding){
+
+            findingsDivNodeList.forEach(function (finding) {
                 // Grabbing all input fields from each findingsDiv
                 var inputNodeList = $(finding).find('input');
-                
-            }); 
+                var row = [];
+
+                for (var i = 0; i < inputNodeList.length; i++) {
+                    var key = inputNodeList[i].name;
+                    var value = inputNodeList[i].value;
+                    var attributeObj = { Key: key, Value: value };
+                    /*
+                        row: [
+                            { Key: 'Major Anatomy', Value: 'Lungs' },
+                            { Key: 'Major Anatomy', Value: 'Lungs' } etc
+                        ]
+                    */
+                    row.push(attributeObj);
+                }
+                var annotationRowObj = {
+                    row: row
+                }
+                /*
+                    annotationRows [
+                        { row: [] },
+                        { row: [] } etc
+                    ]
+                */
+                annotationRows.push(annotationRowObj);
+            });
+            console.log(annotationRows);            
         },
         setupEasyAutocomplete: function (inputClass) {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
