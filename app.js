@@ -67,8 +67,7 @@ var UICtrl = (function () {
 
                 findingDiv.appendChild(closeFindingDivAnchor);
 
-                var findingRow = eachFinding['row'];
-                findingRow.forEach(function (eachAttribute, attributeIndex) {
+                eachFinding.forEach(function (eachAttribute, attributeIndex) {
                     // Create AttributeDiv with index 0, 1, 2 ... etc  
                     var attributeId = DOMStrings.attributeNumId + attributeIndex;
                     var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
@@ -136,7 +135,7 @@ var UICtrl = (function () {
             totalCurrentFindings++;
         },
         // Getter
-        getAllFindings: function () {
+        getAllFindings: function (callBack) {
             // Going through all findingsDiv with class finding_num_x
             var annotationRows = [];
             var findingsDivNodeList = document.querySelectorAll('div[class*="finding_num_"]');
@@ -169,7 +168,9 @@ var UICtrl = (function () {
                 */
                 annotationRows.push(annotationRowObj);
             });
-            console.log(annotationRows);            
+            // ************** ************** ************** //
+            callBack(annotationRows);
+            console.log(annotationRows);
         },
         setupEasyAutocomplete: function (inputClass) {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
@@ -524,9 +525,94 @@ var appCtrl = (function () {
         init: function () {
             console.log('Application started');
 
-            // First image findings array in annotationCtrl.js
-            var cxr_key = "152ba901-12f8-44aa-a60e-c5217e1e9497";
-            var findings = AnnotationCtrl.getRows(cxr_key);
+            var imageAnnotation = {
+                "ImageName": "1.png",
+                "SampleID": "1234-5678-9090",
+                "Width": 512,
+                "Height": 512,
+                "Findings": [
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Lungs"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "Mass/Nodule"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "Upper lung zone"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "Right"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "Non-cavitary"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "Non-calcified"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "Solitary"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "Small"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ],
+                    [
+                        {
+                            "Key": "Major Anatomic Regions",
+                            "Value": "Pleura"
+                        }, {
+                            "Key": "Findings",
+                            "Value": "None"
+                        }, {
+                            "Key": "Subanatomy",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Laterality Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Location Modifier 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 1",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Character Modifiers 2",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Severity Modifier",
+                            "Value": "NA"
+                        }, {
+                            "Key": "# Modifiers",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Size Modifiers Qualitative",
+                            "Value": "NA"
+                        }, {
+                            "Key": "Size Modifiers Quantitative",
+                            "Value": "NA"
+                        }
+                    ]
+                ]
+            }
+            // Send imageAnnotation obj to Findings [] using AnnotationCtrl.getRows()
+            var findings = AnnotationCtrl.getRows(imageAnnotation);
 
             // Setter
             UICtrl.createDivs(findings);
