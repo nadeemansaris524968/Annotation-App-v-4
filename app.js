@@ -38,6 +38,7 @@ var UICtrl = (function () {
         attributeInput.setAttribute('type', 'text');
         attributeInput.setAttribute('value', attribute.Value);
         attributeInput.setAttribute('class', `${findingNumClass}`);
+        attributeInput.setAttribute('name', `${attribute.Key}`);
         // All inputs must have unique ids hence appending finding_num_x with attribute_num_x
         attributeInput.setAttribute('id', `${findingNumClass}${attributeNumId}`);
 
@@ -133,6 +134,16 @@ var UICtrl = (function () {
             // *************** No need to decrement when deleting a new finding or an old one ***************
             totalCurrentFindings++;
         },
+        // Getter
+        getAllFindings: function () {
+            // Going through all findingsDiv with class finding_num_x
+            var findingsDivNodeList = document.querySelectorAll('div[class*="finding_num_"]');
+            findingsDivNodeList.forEach(function(finding){
+                // Grabbing all input fields from each findingsDiv
+                var inputNodeList = $(finding).find('input');
+                
+            }); 
+        },
         setupEasyAutocomplete: function (inputClass) {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
             inputElNodeList.forEach(function (inputEl, elIndex) {
@@ -145,10 +156,9 @@ var UICtrl = (function () {
         },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
-            $(DOMStrings.saveAllBtn).on('click', function () {
-                alert('Click');
-            });
+            $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
         },
+        // Setter
         createDivs: function (findings) {
             createFindingsDivs(findings);
         },
