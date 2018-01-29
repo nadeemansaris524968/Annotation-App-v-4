@@ -1,7 +1,7 @@
 /* UIController */
 var UICtrl = (function () {
 
-    var totalFindings = 0;
+    var totalCurrentFindings = 0;
 
     var emptyAttributes = [
         { Key: 'Major Anatomic Regions', Value: '' },
@@ -50,7 +50,7 @@ var UICtrl = (function () {
             findings.forEach(function (eachFinding, findingIndex) {
                 // Create FindingDiv
                 var findingDiv = document.createElement('div');
-                var findingNumClass = DOMStrings.findingNumClass + totalFindings;
+                var findingNumClass = DOMStrings.findingNumClass + totalCurrentFindings;
                 findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
                 findingDiv.style.overflow = 'hidden';
 
@@ -75,7 +75,7 @@ var UICtrl = (function () {
                 annotationWrapper.appendChild(findingDiv);
                 
                 // Keeping track of number of findings
-                totalFindings++;
+                totalCurrentFindings++;
             });
         }
     };
@@ -88,7 +88,7 @@ var UICtrl = (function () {
 
             // Just use totalFindings since it's already incremented since it 
             // incremented when creating the default finding rows from the supplied data
-            var findingNumClass = DOMStrings.findingNumClass + totalFindings;
+            var findingNumClass = DOMStrings.findingNumClass + totalCurrentFindings;
             findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
             findingDiv.style.overflow = 'hidden';
 
@@ -117,7 +117,7 @@ var UICtrl = (function () {
             // *************** *************** Keeping track of number of findings *************** ***********
             // *************** Remember to decrement when deleting a new finding or an old one ***************
             // *************** Remember to decrement when deleting a new finding or an old one ***************
-            totalFindings++;
+            totalCurrentFindings++;
         },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
