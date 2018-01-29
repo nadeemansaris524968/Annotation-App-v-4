@@ -21,7 +21,8 @@ var UICtrl = (function () {
     var DOMStrings = {
         findingNumClass: 'finding_num_',
         attributeNumId: 'attribute_num_',
-        addBtnId: '#addBtn'
+        addBtnId: '#addBtn',
+        saveAllBtn: '#saveAllBtn'
     }
 
     var createAttriveDiv = function (attribute, findingNumClass, attributeNumId) {
@@ -134,6 +135,9 @@ var UICtrl = (function () {
         },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
+            $(DOMStrings.saveAllBtn).on('click', function() {
+                alert('Click');
+            });
         },
         createDivs: function (findings) {
             createFindingsDivs(findings);
@@ -454,8 +458,6 @@ var appCtrl = (function () {
             var findings = AnnotationCtrl.getRows(cxr_key);
 
             UICtrl.createDivs(findings);
-            UICtrl.setupEventListeners();
-
             // Initial easyAutocomplete setup for all anatomy fields in findingDivs
             var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
             findingDivsNodeList.forEach(function (findingDiv) {
@@ -469,6 +471,8 @@ var appCtrl = (function () {
                     }
                 });
             });
+            
+            UICtrl.setupEventListeners();
         }
     }
 })(UICtrl, AnnotationCtrl, SearchCtrl);

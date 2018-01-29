@@ -24,6 +24,10 @@ input {
   padding: 6px 12px;
 }
 
+.buttonsDiv {
+  margin: 10px 0;
+}
+
 .divAttribute {
   max-width: 200px;
   /* min-width: 90px; */
