@@ -81,45 +81,46 @@ var UICtrl = (function () {
     };
 
     return {
-        setupEventListeners: function () {
-            $(DOMStrings.addBtnId).on('click', function () {
+        addNewFinding: function () {
 
-                // Create FindingDiv
-                var findingDiv = document.createElement('div');
+            // Create FindingDiv
+            var findingDiv = document.createElement('div');
 
-                // Just use totalFindings since it's already incremented since it 
-                // incremented when creating the default finding rows from the supplied data
-                var findingNumClass = DOMStrings.findingNumClass + totalFindings;
-                findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
-                findingDiv.style.overflow = 'hidden';
+            // Just use totalFindings since it's already incremented since it 
+            // incremented when creating the default finding rows from the supplied data
+            var findingNumClass = DOMStrings.findingNumClass + totalFindings;
+            findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
+            findingDiv.style.overflow = 'hidden';
 
-                var closeFindingDivAnchor = document.createElement("a");
-                closeFindingDivAnchor.setAttribute("href", "#");
-                closeFindingDivAnchor.setAttribute("class", "close");
-                closeFindingDivAnchor.setAttribute("data-dismiss", "alert");
-                closeFindingDivAnchor.setAttribute("aria-label", "close");
-                closeFindingDivAnchor.textContent = "x";
+            var closeFindingDivAnchor = document.createElement("a");
+            closeFindingDivAnchor.setAttribute("href", "#");
+            closeFindingDivAnchor.setAttribute("class", "close");
+            closeFindingDivAnchor.setAttribute("data-dismiss", "alert");
+            closeFindingDivAnchor.setAttribute("aria-label", "close");
+            closeFindingDivAnchor.textContent = "x";
 
-                findingDiv.appendChild(closeFindingDivAnchor);
+            findingDiv.appendChild(closeFindingDivAnchor);
 
-                // Create AttributesDiv
-                // Since we have 12 input fields
-                emptyAttributes.forEach(function (eachAttribute, attributeIndex) {
-                    var attributeId = DOMStrings.attributeNumId + attributeIndex;
-                    var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
+            // Create AttributesDiv
+            // Since we have 12 input fields
+            emptyAttributes.forEach(function (eachAttribute, attributeIndex) {
+                var attributeId = DOMStrings.attributeNumId + attributeIndex;
+                var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
 
-                    findingDiv.appendChild(attributeDiv);
-                });
-
-                // Add Event Listerners to input fields
-                var annotationWrapper = document.querySelector('.annotation-wrapper');
-                annotationWrapper.insertAdjacentElement('afterbegin', findingDiv);
-
-                // *************** *************** Keeping track of number of findings *************** ***********
-                // *************** Remember to decrement when deleting a new finding or an old one ***************
-                // *************** Remember to decrement when deleting a new finding or an old one ***************
-                totalFindings++;
+                findingDiv.appendChild(attributeDiv);
             });
+
+            // Add Event Listerners to input fields
+            var annotationWrapper = document.querySelector('.annotation-wrapper');
+            annotationWrapper.insertAdjacentElement('afterbegin', findingDiv);
+
+            // *************** *************** Keeping track of number of findings *************** ***********
+            // *************** Remember to decrement when deleting a new finding or an old one ***************
+            // *************** Remember to decrement when deleting a new finding or an old one ***************
+            totalFindings++;
+        },
+        setupEventListeners: function () {
+            $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
         },
         createDivs: function (findings) {
             createFindingsDivs(findings);
