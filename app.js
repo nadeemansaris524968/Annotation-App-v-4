@@ -37,7 +37,7 @@ var UICtrl = (function () {
         attributeInput.setAttribute('type', 'text');
         attributeInput.setAttribute('value', attribute.Value);
         attributeInput.setAttribute('class', `${findingNumClass}`);
-        attributeInput.setAttribute('id', `${attributeNumId}`);
+        attributeInput.setAttribute('id', `${findingNumClass} ${attributeNumId}`);
 
         attributeDiv.appendChild(attributeHeading);
         attributeDiv.appendChild(attributeInput);
@@ -118,9 +118,8 @@ var UICtrl = (function () {
             // with current findingNumClass (finding_num_x)
             UICtrl.setupEasyAutocomplete(findingNumClass);
 
-            // *************** *************** Keeping track of number of findings *************** ***********
-            // *************** Remember to decrement when deleting a new finding or an old one ***************
-            // *************** Remember to decrement when deleting a new finding or an old one ***************
+            // *************** No need to decrement when deleting a new finding or an old one ***************
+            // *************** No need to decrement when deleting a new finding or an old one ***************
             totalCurrentFindings++;
         },
         setupEasyAutocomplete: function (inputClass) {
@@ -456,14 +455,21 @@ var appCtrl = (function () {
             UICtrl.createDivs(findings);
             UICtrl.setupEventListeners();
 
-            // Later change this to apply all finding_num_ divs
-            var inputElList = document.querySelectorAll('input.finding_num_0');
-            inputElList.forEach(function (inputEl, index) {
-                // Only setting up anatomy input
-                // Rest of the fields will be setup onChoose
-                if (inputEl.id === 'attribute_num_0') {
-                    UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
-                }
+            // Initial easyAutocomplete setup for all anatomy fields in findingDivs
+            var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
+            findingDivsNodeList.forEach(function (findingDiv) {
+                
+                var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
+                inputElList.forEach(function (inputEl, index) {
+                    // Only setting up anatomy input
+                    // Rest of the fields will be setup onChoose
+                    var inputElId = inputEl.id
+                    if (inputEl.id.endsWith('attribute_num_0')) {
+                        console.log('found anatomy class: \n' + inputEl.className + ', id: ' + inputEl.id);
+                        UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
+                    }
+                });
+                console.log(findingDiv);
             });
         }
     }
