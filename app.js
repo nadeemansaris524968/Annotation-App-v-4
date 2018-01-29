@@ -38,6 +38,7 @@ var UICtrl = (function () {
         attributeInput.setAttribute('type', 'text');
         attributeInput.setAttribute('value', attribute.Value);
         attributeInput.setAttribute('class', `${findingNumClass}`);
+        // All inputs must have unique ids hence appending finding_num_x with attribute_num_x
         attributeInput.setAttribute('id', `${findingNumClass}${attributeNumId}`);
 
         attributeDiv.appendChild(attributeHeading);
@@ -79,6 +80,15 @@ var UICtrl = (function () {
                 totalCurrentFindings++;
             });
         }
+    };
+
+    // Trigger focus event on input field to show list of available options
+    var triggerFocus = function (inputDOMString) {
+        // Simulating keypress to trick easyAutocomplete
+        // in to displaying the entire list
+        var e = jQuery.Event("keyup", { keyCode: 65, which: 65 });
+        $(inputDOMString).triggerHandler(e);
+        $(inputDOMString).trigger('change');
     };
 
     return {
@@ -135,7 +145,7 @@ var UICtrl = (function () {
         },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
-            $(DOMStrings.saveAllBtn).on('click', function() {
+            $(DOMStrings.saveAllBtn).on('click', function () {
                 alert('Click');
             });
         },
@@ -158,7 +168,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Size_1 input to easyAutocomplete
         setupSize_1: function (searchData, inputEl) {
@@ -176,7 +188,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning NumModifier input to easyAutocomplete
         setupNumModifier: function (searchData, inputEl) {
@@ -194,7 +208,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Severity input to easyAutocomplete
         setupSeverity: function (searchData, inputEl) {
@@ -212,7 +228,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Character_2 input to easyAutocomplete
         setupCharacter_2: function (searchData, inputEl) {
@@ -230,7 +248,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Character_1 input to easyAutocomplete
         setupCharacter_1: function (searchData, inputEl) {
@@ -248,7 +268,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Location_2 input to easyAutocomplete
         setupLocation_2: function (searchData, inputEl) {
@@ -266,7 +288,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Location_1 input to easyAutocomplete
         setupLocation_1: function (searchData, inputEl) {
@@ -284,7 +308,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
         // Turning Laterality input to easyAutocomplete
         setupLaterality: function (searchData, inputEl) {
@@ -302,9 +328,11 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         },
-        // Turning Subanatomy input to easyAutocomplete
+        // Turning Subanatomy input to easyAutocomplet
         setupSubAnatomy: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
             var inputClass = '.' + inputEl.className;
@@ -368,7 +396,9 @@ var UICtrl = (function () {
                 theme: 'square'
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });;
         },
         // Turning Finding input to easyAutocomplete
         setupFindings: function (searchData, inputEl) {
@@ -402,13 +432,15 @@ var UICtrl = (function () {
                 theme: 'square'
             };
 
-            $(inputId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });;
         },
         // Turning Anatomy input to easyAutocomplete
         // onChoose others will be setup
-        setupAnatomy: function (searchData, element) {
-            var elementId = '#' + element.id;
-            var elementClass = '.' + element.className;
+        setupAnatomy: function (searchData, inputEl) {
+            var inputId = '#' + inputEl.id;
+            var inputClass = '.' + inputEl.className;
             var options = {
                 data: searchData,
                 listLocation: function (element) {
@@ -421,7 +453,7 @@ var UICtrl = (function () {
                     },
                     maxNumberOfElements: 50,
                     onChooseEvent: function () {
-                        var majorAnatomy = $(elementId).val();
+                        var majorAnatomy = $(inputId).val();
 
                         searchData["Major Anatomic Region"].find(function (element) {
                             if (element.name === majorAnatomy) {
@@ -429,7 +461,7 @@ var UICtrl = (function () {
 
                                 // Go through current element's class elements (which are basically siblings)
                                 // and update setupFinding
-                                var currentClassEls = document.querySelectorAll('input' + elementClass);
+                                var currentClassEls = document.querySelectorAll('input' + inputClass);
                                 currentClassEls.forEach(function (el) {
                                     if (el.id.includes('attribute_num_1')) {
                                         UICtrl.setupFindings(findings, el);
@@ -442,7 +474,9 @@ var UICtrl = (function () {
                 theme: "square"
             };
 
-            $(elementId).easyAutocomplete(options);
+            $(inputId).easyAutocomplete(options).focus(function () {
+                triggerFocus(inputId);
+            });
         }
     };
 })();
@@ -457,11 +491,12 @@ var appCtrl = (function () {
             var cxr_key = "152ba901-12f8-44aa-a60e-c5217e1e9497";
             var findings = AnnotationCtrl.getRows(cxr_key);
 
+            // Setter
             UICtrl.createDivs(findings);
             // Initial easyAutocomplete setup for all anatomy fields in findingDivs
             var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
             findingDivsNodeList.forEach(function (findingDiv) {
-                
+
                 var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
                 inputElList.forEach(function (inputEl, index) {
                     // Only setting up anatomy input
@@ -471,7 +506,7 @@ var appCtrl = (function () {
                     }
                 });
             });
-            
+
             UICtrl.setupEventListeners();
         }
     }
