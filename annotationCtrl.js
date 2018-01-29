@@ -20,7 +20,6 @@ var AnnotationCtrl = (function () {
           }
         }
       }
-      console.log('filtered rows: ', JSON.stringify(filteredRows, undefined, 2));
       return filteredRows;
     }
   };
