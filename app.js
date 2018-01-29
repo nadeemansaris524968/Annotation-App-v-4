@@ -1,6 +1,8 @@
 /* UIController */
 var UICtrl = (function () {
 
+    var totalFindings = 0;
+
     var emptyAttributes = [
         { Key: 'Major Anatomic Regions', Value: '' },
         { Key: 'Findings', Value: '' },
@@ -48,7 +50,8 @@ var UICtrl = (function () {
             findings.forEach(function (eachFinding, findingIndex) {
                 // Create FindingDiv
                 var findingDiv = document.createElement('div');
-                findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${DOMStrings.findingNumClass}`);
+                var findingNumClass = DOMStrings.findingNumClass + totalFindings;
+                findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
                 findingDiv.style.overflow = 'hidden';
 
                 var closeFindingDivAnchor = document.createElement("a");
@@ -64,12 +67,15 @@ var UICtrl = (function () {
                 findingRow.forEach(function (eachAttribute, attributeIndex) {
                     // Create AttributeDiv with index 0, 1, 2 ... etc  
                     var attributeId = DOMStrings.attributeNumId + attributeIndex;
-                    var attributeDiv = createAttriveDiv(eachAttribute, DOMStrings.findingNumClass, attributeId);
+                    var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
 
                     findingDiv.appendChild(attributeDiv);
                 });
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.appendChild(findingDiv);
+                
+                // Keeping track of number of findings
+                totalFindings++;
             });
         }
     };
@@ -77,9 +83,14 @@ var UICtrl = (function () {
     return {
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', function () {
+
                 // Create FindingDiv
                 var findingDiv = document.createElement('div');
-                findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${DOMStrings.findingNumClass}`);
+
+                // Just use totalFindings since it's already incremented since it 
+                // incremented when creating the default finding rows from the supplied data
+                var findingNumClass = DOMStrings.findingNumClass + totalFindings;
+                findingDiv.setAttribute('class', `alert alert-info alert-dismissable ${findingNumClass}`);
                 findingDiv.style.overflow = 'hidden';
 
                 var closeFindingDivAnchor = document.createElement("a");
@@ -93,9 +104,9 @@ var UICtrl = (function () {
 
                 // Create AttributesDiv
                 // Since we have 12 input fields
-                emptyAttributes.forEach(function(eachAttribute, attributeIndex){
+                emptyAttributes.forEach(function (eachAttribute, attributeIndex) {
                     var attributeId = DOMStrings.attributeNumId + attributeIndex;
-                    var attributeDiv = createAttriveDiv(eachAttribute, DOMStrings.findingNumClass, attributeId);
+                    var attributeDiv = createAttriveDiv(eachAttribute, findingNumClass, attributeId);
 
                     findingDiv.appendChild(attributeDiv);
                 });
@@ -103,6 +114,11 @@ var UICtrl = (function () {
                 // Add Event Listerners to input fields
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.insertAdjacentElement('afterbegin', findingDiv);
+
+                // *************** *************** Keeping track of number of findings *************** ***********
+                // *************** Remember to decrement when deleting a new finding or an old one ***************
+                // *************** Remember to decrement when deleting a new finding or an old one ***************
+                totalFindings++;
             });
         },
         createDivs: function (findings) {
@@ -393,7 +409,8 @@ var UICtrl = (function () {
                             if (element.name === majorAnatomy) {
                                 var findings = element["Findings"];
 
-                                // Go through current element's class siblings and update setupFinding                                
+                                // Go through current element's class elements (which are basically siblings)
+                                // and update setupFinding
                                 var currentClassEls = document.querySelectorAll('input' + elementClass);
                                 currentClassEls.forEach(function (el) {
                                     if (el.id === 'attribute_num_1') {
@@ -425,7 +442,7 @@ var appCtrl = (function () {
             UICtrl.setupEventListeners();
 
             // Later change this to apply all finding_num_ divs
-            var finding_num_0_NodeList = document.querySelectorAll('input.finding_num_');
+            var finding_num_0_NodeList = document.querySelectorAll('input.finding_num_0');
             finding_num_0_NodeList.forEach(function (element, elIndex) {
                 // Only setting up anatomy input
                 // Rest of the fields will be setup onChoose
