@@ -126,8 +126,8 @@ var UICtrl = (function () {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
             inputElNodeList.forEach(function (inputEl, elIndex) {
                 // Only setting up anatomy input
-                // Rest of the fields will be setup onChoose
-                if (inputEl.id === 'attribute_num_0') {
+                // Rest of the fields will be setup onChoose of easyAutocomplete
+                if (inputEl.id.includes('attribute_num_0')) {
                     UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
                 }
             });
@@ -462,7 +462,7 @@ var appCtrl = (function () {
                 var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
                 inputElList.forEach(function (inputEl, index) {
                     // Only setting up anatomy input
-                    // Rest of the fields will be setup onChoose
+                    // Rest of the fields will be setup onChoose of easyAutocomplete
                     if (inputEl.id.includes('attribute_num_0')) {
                         UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
                     }
