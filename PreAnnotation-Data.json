@@ -1,125 +1,1942 @@
-var imageAnnotation = {
-    "ImageName": "1.png",
-    "SampleID": "1234-5678-9090",
-    "Width": 512,
-    "Height": 512,
-    "Findings": [
-        [
-            {
-                "Key": "Major Anatomic Regions",
-                "Value": "Lungs"
-            }, {
-                "Key": "Findings",
-                "Value": "Mass/Nodule"
-            }, {
-                "Key": "Subanatomy",
-                "Value": "Upper lung zone"
-            }, {
-                "Key": "Laterality Modifier",
-                "Value": "Right"
-            }, {
-                "Key": "Location Modifier 1",
-                "Value": "NA"
-            }, {
-                "Key": "Location Modifier 2",
-                "Value": "NA"
-            }, {
-                "Key": "Character Modifiers 1",
-                "Value": "Non-cavitary"
-            }, {
-                "Key": "Character Modifiers 2",
-                "Value": "Non-calcified"
-            }, {
-                "Key": "Severity Modifier",
-                "Value": "NA"
-            }, {
-                "Key": "# Modifiers",
-                "Value": "Solitary"
-            }, {
-                "Key": "Size Modifiers Qualitative",
-                "Value": "Small"
-            }, {
-                "Key": "Size Modifiers Quantitative",
-                "Value": "NA"
-            }
-        ],
-        [
-            {
-                "Key": "Major Anatomic Regions",
-                "Value": "Lungs"
-            }, {
-                "Key": "Findings",
-                "Value": "Mass/Nodule"
-            }, {
-                "Key": "Subanatomy",
-                "Value": "Upper lung zone"
-            }, {
-                "Key": "Laterality Modifier",
-                "Value": "Right"
-            }, {
-                "Key": "Location Modifier 1",
-                "Value": "NA"
-            }, {
-                "Key": "Location Modifier 2",
-                "Value": "NA"
-            }, {
-                "Key": "Character Modifiers 1",
-                "Value": "Non-cavitary"
-            }, {
-                "Key": "Character Modifiers 2",
-                "Value": "Non-calcified"
-            }, {
-                "Key": "Severity Modifier",
-                "Value": "NA"
-            }, {
-                "Key": "# Modifiers",
-                "Value": "Solitary"
-            }, {
-                "Key": "Size Modifiers Qualitative",
-                "Value": "Small"
-            }, {
-                "Key": "Size Modifiers Quantitative",
-                "Value": "NA"
-            }
-        ],
-        [
-            {
-                "Key": "Major Anatomic Regions",
-                "Value": "Lungs"
-            }, {
-                "Key": "Findings",
-                "Value": "Mass/Nodule"
-            }, {
-                "Key": "Subanatomy",
-                "Value": "Upper lung zone"
-            }, {
-                "Key": "Laterality Modifier",
-                "Value": "Right"
-            }, {
-                "Key": "Location Modifier 1",
-                "Value": "NA"
-            }, {
-                "Key": "Location Modifier 2",
-                "Value": "NA"
-            }, {
-                "Key": "Character Modifiers 1",
-                "Value": "Non-cavitary"
-            }, {
-                "Key": "Character Modifiers 2",
-                "Value": "Non-calcified"
-            }, {
-                "Key": "Severity Modifier",
-                "Value": "NA"
-            }, {
-                "Key": "# Modifiers",
-                "Value": "Solitary"
-            }, {
-                "Key": "Size Modifiers Qualitative",
-                "Value": "Small"
-            }, {
-                "Key": "Size Modifiers Quantitative",
-                "Value": "NA"
-            }
+{
+    "152ba901-12f8-44aa-a60e-c5217e1e9497": {
+        "ImageName": "1.png",
+        "SampleID": "1234-5678-9090",
+        "Width": 512,
+        "Height": 512,
+        "Findings": [
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Mass/Nodule"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Upper lung zone"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Right"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "Non-cavitary"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "Non-calcified"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "Solitary"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "Small"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Pleura"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Major airways"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Vasculature"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Bones"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Scoliosis"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Thoracic spine"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "Left convex"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Mild"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Other"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ]
         ]
-    ]
-};
+    },
+    "2f6789a7-ce71-433c-923b-27f56f43fb20": {
+        "ImageName": "2.png",
+        "SampleID": "1234-5678-9090",
+        "Width": 512,
+        "Height": 512,
+        "Findings": [
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Calcified hilar nodes"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Hila"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Left"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Pleura"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Major airways"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Enlarged cardiac silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Cardiac silhouette"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Mild"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Vasculature"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Bones"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Other"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ]
+        ]
+    },
+    "b128d8c7-cce1-493b-8f89-dffd19c4e29d": {
+        "ImageName": "3.png",
+        "SampleID": "1234-5678-9090",
+        "Width": 512,
+        "Height": 512,
+        "Findings": [
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Hypoaeration"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "All lung zones"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Bilateral"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Severe"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Mass/Nodule"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Lower lung zone"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Right"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "Non-cavitary"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "Non-calcified"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "Solitary"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Pleura"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Major airways"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Enlarged cardiac silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Cardiac silhouette"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Mild"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Obscuration of the diaphragmatic silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Hemidiaphragm"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "left"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "Small"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Vasculature"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Vascular redistribution"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Pulmonary veins"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Bilateral"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Bones"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Other"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "EKG leads and wires"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Chest wall"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Bilateral"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ]
+        ]
+    },
+    "9a797816-c090-4338-a074-c19974d5ffb3": {
+        "ImageName": "4.png",
+        "SampleID": "1234-5678-9090",
+        "Width": 512,
+        "Height": 512,
+        "Findings": [
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Enlarged hilum"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Hila"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Bilateral"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Pleura"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Major airways"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Obscuration of the diaphragmatic silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Hemidiaphragm"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Left"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Enlarged cardiac silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Cardiac silhouette"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Vasculature"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Vascular redistribution"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Pulmonary veins"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Bilateral"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Bones"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Other"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "? Some subdiaphragmatic abnormality"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ]
+        ]
+    },
+    "b863b397-a1ff-45be-ac2f-ee3c0024514d": {
+        "ImageName": "5.png",
+        "SampleID": "1234-5678-9090",
+        "Width": 512,
+        "Height": 512,
+        "Findings": [
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Lungs"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Pleura"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Major airways"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Mediastinum"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "Enlarged cardiac silhouette"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "Cardiac silhouette"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "Left"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "Moderate"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Vasculature"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Bones"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "None"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ],
+            [
+                {
+                    "Key": "Major Anatomic Regions",
+                    "Value": "Other"
+                },
+                {
+                    "Key": "Findings",
+                    "Value": "? Dilated bowels"
+                },
+                {
+                    "Key": "Subanatomy",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Laterality Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Location Modifier_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_1",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Character Modifiers_2",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Severity Modifier",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "# Modifiers",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Qualitative",
+                    "Value": "NA"
+                },
+                {
+                    "Key": "Size Modifiers Quantitative",
+                    "Value": "NA"
+                }
+            ]
+        ]
+    }
+}
