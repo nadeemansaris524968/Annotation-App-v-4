@@ -2,6 +2,2027 @@ var SearchCtrl = (function() {
   var data = {
     "Major Anatomic Region": [
       {
+        name: "Lungs",
+        Findings: [
+          {
+            name: "Alveolar opacity",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Peripheral" },
+                  { name: "Central" },
+                  { name: "Peripheral and Central" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Mid Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Peripheral" },
+                  { name: "Central" },
+                  { name: "Peripheral and Central" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Peripheral" },
+                  { name: "Central" },
+                  { name: "Peripheral and Central" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "Peripheral and Central" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Atelectasis",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Mid Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "All Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Bronchiectesis",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Cylindrical" },
+                  { name: "Saccular" },
+                  { name: "Varicoid" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Cylindrical" },
+                  { name: "Saccular" },
+                  { name: "Varicoid" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Calcified hilar nodes",
+            Subanatomy: [
+              {
+                name: "Hila",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Cyst/Bulla",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Mid Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Enlarged hilum",
+            Subanatomy: [
+              {
+                name: "Hila",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Findings consistent with granulomatous",
+            Subanatomy: [
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Findings consistent with granulomatous disease",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Faint" },
+                  { name: "Moderately dense" },
+                  { name: "Very dense" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Hypoaeration",
+            Subanatomy: [
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Hyperaeration",
+            Subanatomy: [
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Increased reticular markings",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Increased reticulonodular markings",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              },
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mass/Nodule",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Non-cavitary" },
+                  { name: "Thin walled cavity" },
+                  { name: "Thick walled cavity" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Calcified" },
+                  { name: "Non-calcified" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [
+                  { name: "Solitary" },
+                  { name: "Multiple" },
+                  { name: "Numerous miliary" }
+                ],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Mid Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Non-cavitary" },
+                  { name: "Thin walled cavity" },
+                  { name: "Thick walled cavity" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Calcified" },
+                  { name: "Non-calcified" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [
+                  { name: "Solitary" },
+                  { name: "Multiple" },
+                  { name: "Numerous miliary" }
+                ],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Non-cavitary" },
+                  { name: "Thin walled cavity" },
+                  { name: "Thick walled cavity" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Calcified" },
+                  { name: "Non-calcified" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [
+                  { name: "Solitary" },
+                  { name: "Multiple" },
+                  { name: "Numerous miliary" }
+                ],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Peribronchial cuffing",
+            Subanatomy: [
+              {
+                name: "All Lung Zones",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pneumonectomy",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [
+                  { name: "Partial" },
+                  { name: "Complete" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Major Airways",
+        Findings: [
+          {
+            name: "Tracheal deformity",
+            Subanatomy: [
+              {
+                name: "Trachea",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [
+                  { name: "Upper" },
+                  { name: "Mid" },
+                  { name: "Lower" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Narrowed" },
+                  { name: "Dilated" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Tracheal displacement",
+            Subanatomy: [
+              {
+                name: "Trachea",
+                "Laterality Modifier": [
+                  { name: "Leftward" },
+                  { name: "Rightward" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Upper" },
+                  { name: "Mid" },
+                  { name: "Lower" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mainstem bronchus deformity",
+            Subanatomy: [
+              {
+                name: "Mainstem bronchus",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Narrowed" },
+                  { name: "Dilated" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Mainstem bronchus displacement",
+            Subanatomy: [
+              {
+                name: "Mainstem bronchus",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Upward" },
+                  { name: "Downward" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Bronchial cut-off",
+            Subanatomy: [
+              {
+                name: "Mainstem bronchus",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Endobronchial lesion",
+            Subanatomy: [
+              {
+                name: "Mainstem bronchus",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Vasculature",
+        Findings: [
+          {
+            name: "Vascular redistribution",
+            Subanatomy: [
+              {
+                name: "Pulmonary veins",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pulmonary artery enlargement",
+            Subanatomy: [
+              {
+                name: "Pulmonary arteries",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pulmonary artery cut-off",
+            Subanatomy: [
+              {
+                name: "Pulmonary arteries",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Anomalous pulmonary vessel",
+            Subanatomy: [
+              {
+                name: "Upper Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Mid Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              },
+              {
+                name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Aortic atherosclerosis",
+            Subanatomy: [
+              {
+                name: "Aorta",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [
+                  { name: "Ascending" },
+                  { name: "Arch" },
+                  { name: "Descending" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Aortic dilation",
+            Subanatomy: [
+              {
+                name: "Aorta",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [
+                  { name: "Ascending" },
+                  { name: "Arch" },
+                  { name: "Descending" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Obscuration of the descending thoracic aorta",
+            Subanatomy: [
+              {
+                name: "Aorta",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Descending" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Right-sided aortic arch",
+            Subanatomy: [
+              {
+                name: "Aorta",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Arch" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Aorta/great vessel congenital anomaly",
+            Subanatomy: [
+              {
+                name: "Aorta",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Mediastinum",
+        Findings: [
+          {
+            name: "Thickened paratracheal stripe",
+            Subanatomy: [
+              {
+                name: "Paratracheal stripe",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Paratracheal mass",
+            Subanatomy: [
+              {
+                name: "Paratracheal region",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Non-calcified" },
+                  { name: "Calcified" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Azygous region enlargement",
+            Subanatomy: [
+              {
+                name: "Azygous region",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Mediastinal widening",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Superior" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Mediastinal displacement",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "Measure:" }]
+              }
+            ]
+          },
+          {
+            name: "Pneunomediastinum",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Enlarged cardiac silhouette",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Cardiothoracic ration:  X%" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Obscured cardiac silhouette",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Cardiothoracic ration:  X%" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Pneumopericardium",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pneumocardium",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Abnormal shape suggesting congenital heart disease",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Situs inversus",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mitral valve annulus calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Mitral valve annulus" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mitral valve calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Mitral valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mitral valve prosthesis",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Mitral valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Aortic valve calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Aortic valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Aortic valve prosthesis",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Aortic valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pulmonic valve calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Pulmonic valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pulmonic valve prosthesis",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Pulmonic valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Tricuspid valve calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Tricuspid valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Tricuspid valve prosthesis",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Tricuspid valve" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Enlarged left atrium",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "Atrium" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Enlarged right atrium",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "Atrium" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Enlarged left ventricle",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "Ventricle" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Left ventricular bulging with calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "Ventricle" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Left ventricular bulging without calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "Left" }],
+                "Location Modifier 1": [{ name: "Ventricle" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Pericardial calcification",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Pericardium" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Cardiophrenic angle mass",
+            Subanatomy: [
+              {
+                name: "Cardiophrenic angle",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Pleura",
+        Findings: [
+          {
+            name: "Costophrenic angle blunting",
+            Subanatomy: [
+              {
+                name: "Costophrenic angle",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Flattening of the hemidiaphragmatic silhouette",
+            Subanatomy: [
+              {
+                name: "Hemidiaphragm",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Hydropneumothoraces",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Hydropneumothorax",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Obscuration of the diaphragmatic silhouette",
+            Subanatomy: [
+              {
+                name: "Hemidiaphragm",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pleural calcification",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Lateral" },
+                  { name: "Basilar/Diaphragmatic" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pleural effusion",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pleural mass",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Lateral" },
+                  { name: "Basilar/Diaphragmatic" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pleural masses",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Lateral" },
+                  { name: "Basilar/Diaphragmatic" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pleural thickening",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Lateral" },
+                  { name: "Basilar/Diaphragmatic" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pneumothoraces",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Basilar/Diaphragmatic" },
+                  { name: "NA" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pneumothorax",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [
+                  { name: "Apical" },
+                  { name: "Basilar/Diaphragmatic" },
+                  { name: "NA" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
         name: "Bones",
         Findings: [
           {
@@ -905,2027 +2926,6 @@ var SearchCtrl = (function() {
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Lungs",
-        Findings: [
-          {
-            name: "Alveolar opacity",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Peripheral" },
-                  { name: "Central" },
-                  { name: "Peripheral and Central" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Mid Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Peripheral" },
-                  { name: "Central" },
-                  { name: "Peripheral and Central" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Peripheral" },
-                  { name: "Central" },
-                  { name: "Peripheral and Central" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "Peripheral and Central" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Atelectasis",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Mid Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "All Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Bronchiectesis",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Cylindrical" },
-                  { name: "Saccular" },
-                  { name: "Varicoid" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Cylindrical" },
-                  { name: "Saccular" },
-                  { name: "Varicoid" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Calcified hilar nodes",
-            Subanatomy: [
-              {
-                name: "Hila",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Cyst/Bulla",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Mid Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "Single" }, { name: "Multiple" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Enlarged hilum",
-            Subanatomy: [
-              {
-                name: "Hila",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Findings consistent with granulomatous",
-            Subanatomy: [
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Findings consistent with granulomatous disease",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Hypoaeration",
-            Subanatomy: [
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Hyperaeration",
-            Subanatomy: [
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Increased reticular markings",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Increased reticulonodular markings",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              },
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mass/Nodule",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Non-cavitary" },
-                  { name: "Thin walled cavity" },
-                  { name: "Thick walled cavity" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Calcified" },
-                  { name: "Non-calcified" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [
-                  { name: "Solitary" },
-                  { name: "Multiple" },
-                  { name: "Numerous miliary" }
-                ],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Mid Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Non-cavitary" },
-                  { name: "Thin walled cavity" },
-                  { name: "Thick walled cavity" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Calcified" },
-                  { name: "Non-calcified" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [
-                  { name: "Solitary" },
-                  { name: "Multiple" },
-                  { name: "Numerous miliary" }
-                ],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Non-cavitary" },
-                  { name: "Thin walled cavity" },
-                  { name: "Thick walled cavity" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Calcified" },
-                  { name: "Non-calcified" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [
-                  { name: "Solitary" },
-                  { name: "Multiple" },
-                  { name: "Numerous miliary" }
-                ],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Peribronchial cuffing",
-            Subanatomy: [
-              {
-                name: "All Lung Zones",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pneumonectomy",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [
-                  { name: "Partial" },
-                  { name: "Complete" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Major Airways",
-        Findings: [
-          {
-            name: "Tracheal deformity",
-            Subanatomy: [
-              {
-                name: "Trachea",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [
-                  { name: "Upper" },
-                  { name: "Mid" },
-                  { name: "Lower" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Narrowed" },
-                  { name: "Dilated" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Tracheal displacement",
-            Subanatomy: [
-              {
-                name: "Trachea",
-                "Laterality Modifier": [
-                  { name: "Leftward" },
-                  { name: "Rightward" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Upper" },
-                  { name: "Mid" },
-                  { name: "Lower" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mainstem bronchus deformity",
-            Subanatomy: [
-              {
-                name: "Mainstem bronchus",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Narrowed" },
-                  { name: "Dilated" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Mainstem bronchus displacement",
-            Subanatomy: [
-              {
-                name: "Mainstem bronchus",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Upward" },
-                  { name: "Downward" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Bronchial cut-off",
-            Subanatomy: [
-              {
-                name: "Mainstem bronchus",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Endobronchial lesion",
-            Subanatomy: [
-              {
-                name: "Mainstem bronchus",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Mediastinum",
-        Findings: [
-          {
-            name: "Thickened paratracheal stripe",
-            Subanatomy: [
-              {
-                name: "Paratracheal stripe",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Paratracheal mass",
-            Subanatomy: [
-              {
-                name: "Paratracheal region",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Non-calcified" },
-                  { name: "Calcified" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Azygous region enlargement",
-            Subanatomy: [
-              {
-                name: "Azygous region",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Mediastinal widening",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Superior" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Mediastinal displacement",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Pneunomediastinum",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Enlarged cardiac silhouette",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Cardiothoracic ration:  X%" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Obscured cardiac silhouette",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Cardiothoracic ration:  X%" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Pneumopericardium",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pneumocardium",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Abnormal shape suggesting congenital heart disease",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Situs inversus",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mitral valve annulus calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Mitral valve annulus" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mitral valve calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Mitral valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mitral valve prosthesis",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Mitral valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Aortic valve calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Aortic valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Aortic valve prosthesis",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Aortic valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pulmonic valve calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Pulmonic valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pulmonic valve prosthesis",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Pulmonic valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Tricuspid valve calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Tricuspid valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Tricuspid valve prosthesis",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Tricuspid valve" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Enlarged left atrium",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "Atrium" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Enlarged right atrium",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "Atrium" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Enlarged left ventricle",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "Ventricle" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Left ventricular bulging with calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "Ventricle" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Left ventricular bulging without calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
-                "Location Modifier 1": [{ name: "Ventricle" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pericardial calcification",
-            Subanatomy: [
-              {
-                name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Pericardium" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Cardiophrenic angle mass",
-            Subanatomy: [
-              {
-                name: "Cardiophrenic angle",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Vasculature",
-        Findings: [
-          {
-            name: "Vascular redistribution",
-            Subanatomy: [
-              {
-                name: "Pulmonary veins",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pulmonary artery enlargement",
-            Subanatomy: [
-              {
-                name: "Pulmonary arteries",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Pulmonary artery cut-off",
-            Subanatomy: [
-              {
-                name: "Pulmonary arteries",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Anomalous pulmonary vessel",
-            Subanatomy: [
-              {
-                name: "Upper Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Mid Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              },
-              {
-                name: "Lower Lung Zone",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Aortic atherosclerosis",
-            Subanatomy: [
-              {
-                name: "Aorta",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [
-                  { name: "Ascending" },
-                  { name: "Arch" },
-                  { name: "Descending" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Aortic dilation",
-            Subanatomy: [
-              {
-                name: "Aorta",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [
-                  { name: "Ascending" },
-                  { name: "Arch" },
-                  { name: "Descending" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Obscuration of the descending thoracic aorta",
-            Subanatomy: [
-              {
-                name: "Aorta",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Descending" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Measure:" }]
-              }
-            ]
-          },
-          {
-            name: "Right-sided aortic arch",
-            Subanatomy: [
-              {
-                name: "Aorta",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Arch" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Aorta/great vessel congenital anomaly",
-            Subanatomy: [
-              {
-                name: "Aorta",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        name: "Pleura",
-        Findings: [
-          {
-            name: "Costophrenic angle blunting",
-            Subanatomy: [
-              {
-                name: "Costophrenic angle",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Flattening of the hemidiaphragmatic silhouette",
-            Subanatomy: [
-              {
-                name: "Hemidiaphragm",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Hydropneumothoraces",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Hydropneumothorax",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Obscuration of the diaphragmatic silhouette",
-            Subanatomy: [
-              {
-                name: "Hemidiaphragm",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pleural calcification",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Lateral" },
-                  { name: "Basilar/Diaphragmatic" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pleural effusion",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pleural mass",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Lateral" },
-                  { name: "Basilar/Diaphragmatic" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pleural masses",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Lateral" },
-                  { name: "Basilar/Diaphragmatic" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pleural thickening",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Lateral" },
-                  { name: "Basilar/Diaphragmatic" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pneumothoraces",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Basilar/Diaphragmatic" },
-                  { name: "NA" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Pneumothorax",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [
-                  { name: "Apical" },
-                  { name: "Basilar/Diaphragmatic" },
-                  { name: "NA" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
               }
             ]
           }
