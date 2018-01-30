@@ -77,8 +77,8 @@ var UICtrl = (function () {
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.appendChild(findingDiv);
                 
+                // Setup EasyAutocomplete for initial findingDivs
                 if (typeof setupInitialEasyAutocompleteCallback === 'function') {
-                    console.log('Setup Initial EasyAutocomplete for findingDivs');
                     setupInitialEasyAutocompleteCallback();
                 }
                 // Keeping track of number of findings
