@@ -49,7 +49,7 @@ var UICtrl = (function () {
         return attributeDiv;
     };
 
-    var createFindingsDivs = function (findings) {
+    var createFindingsDivs = function (findings, setupInitialEasyAutocompleteCallback) {
         if (findings.length > 0) {
             findings.forEach(function (eachFinding, findingIndex) {
                 // Create FindingDiv
@@ -76,7 +76,11 @@ var UICtrl = (function () {
                 });
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.appendChild(findingDiv);
-
+                
+                if (typeof setupInitialEasyAutocompleteCallback === 'function') {
+                    console.log('Setup Initial EasyAutocomplete for findingDivs');
+                    setupInitialEasyAutocompleteCallback();
+                }
                 // Keeping track of number of findings
                 totalCurrentFindings++;
             });
@@ -162,6 +166,7 @@ var UICtrl = (function () {
             // callBack(findingsParentArray);
             console.log(JSON.stringify(findingsParentArray, undefined, 2));
         },
+        // For addFindingButton
         setupEasyAutocomplete: function (inputClass) {
             var inputElNodeList = document.querySelectorAll('input.' + inputClass);
             inputElNodeList.forEach(function (inputEl, elIndex) {
@@ -172,13 +177,29 @@ var UICtrl = (function () {
                 }
             });
         },
+        // After we've created initial findingDivs from setter data
+        setupInitialEasyAutocomplete: function () {
+            // Initial easyAutocomplete setup for all anatomy fields in findingDivs
+            var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
+            findingDivsNodeList.forEach(function (findingDiv) {
+
+                var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
+                inputElList.forEach(function (inputEl, index) {
+                    // Only setting up anatomy input
+                    // Rest of the fields will be setup onChoose of easyAutocomplete
+                    if (inputEl.id.includes('attribute_num_0')) {
+                        UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
+                    }
+                });
+            });
+        },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
             $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
         },
         // Setter
         createDivs: function (findings) {
-            createFindingsDivs(findings);
+            createFindingsDivs(findings, UICtrl.setupInitialEasyAutocomplete);
         },
         // Turning Size_2 input to easyAutocomplete
         setupSize_2: function (searchData, inputEl) {
@@ -646,19 +667,6 @@ var appCtrl = (function () {
 
             // Setter
             UICtrl.createDivs(findings);
-            // Initial easyAutocomplete setup for all anatomy fields in findingDivs
-            var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
-            findingDivsNodeList.forEach(function (findingDiv) {
-
-                var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
-                inputElList.forEach(function (inputEl, index) {
-                    // Only setting up anatomy input
-                    // Rest of the fields will be setup onChoose of easyAutocomplete
-                    if (inputEl.id.includes('attribute_num_0')) {
-                        UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
-                    }
-                });
-            });
 
             UICtrl.setupEventListeners();
         }
