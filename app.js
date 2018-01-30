@@ -76,7 +76,7 @@ var UICtrl = (function () {
                 });
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.appendChild(findingDiv);
-                
+
                 // Keeping track of number of findings
                 totalCurrentFindings++;
             });
@@ -180,18 +180,22 @@ var UICtrl = (function () {
         // After we've created initial findingDivs from setter data
         setupInitialEasyAutocomplete: function () {
             // Initial easyAutocomplete setup for all anatomy fields in findingDivs
-            var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
-            findingDivsNodeList.forEach(function (findingDiv) {
+            // var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
+            // findingDivsNodeList.forEach(function (findingDiv) {
 
-                var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
-                inputElList.forEach(function (inputEl, index) {
-                    // Only setting up anatomy input
-                    // Rest of the fields will be setup onChoose of easyAutocomplete
-                    if (inputEl.id.includes('attribute_num_0')) {
-                        UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
-                    }
-                });
-            });
+            //     var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
+            //     inputElList.forEach(function (inputEl, index) {
+            //         // Only setting up anatomy input
+            //         // Rest of the fields will be setup onChoose of easyAutocomplete
+            //         if (inputEl.id.includes('attribute_num_0')) {
+            //             UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
+            //         }
+            //     });
+            // });
+            var inputs = $('div[class*="finding_num_"] :input[id*="attribute_num_0"]');
+            for (var i = 0; i < inputs.length; i++) {
+                UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputs[i]);
+            }
         },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
@@ -408,6 +412,8 @@ var UICtrl = (function () {
                                 var size_2 = subAnatomy["Size Modifiers Quantitative"];
 
                                 // Go through current element's class siblings and setup accordingly for input
+                                /* 
+                                    Old Implementation
                                 var currentClassInputs = document.querySelectorAll('input' + inputClass);
                                 currentClassInputs.forEach(function (input) {
                                     if (input.id.includes('attribute_num_3')) {
@@ -438,6 +444,41 @@ var UICtrl = (function () {
                                         UICtrl.setupSize_2(size_2, input);
                                     }
                                 });
+                                    Old Implementation
+                                */
+
+                                // New Implementation
+                                var inputs = $(inputClass + ' :input');
+                                for (var i = 0; i < inputs.length; i++) {
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_3') {
+                                        UICtrl.setupLaterality(laterality, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_4') {
+                                        UICtrl.setupLocation_1(location_1, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_5') {
+                                        UICtrl.setupLocation_2(location_2, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_6') {
+                                        UICtrl.setupCharacter_1(character_1, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_7') {
+                                        UICtrl.setupCharacter_2(character_2, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_8') {
+                                        UICtrl.setupSeverity(severity, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_9') {
+                                        UICtrl.setupNumModifier(numModifier, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_10') {
+                                        UICtrl.setupSize_1(size_1, inputs[i]);
+                                    }
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_11') {
+                                        UICtrl.setupSize_2(size_2, inputs[i]);
+                                    }
+                                }
+                                // New Implementation
                             }
                         });
                     }
@@ -467,13 +508,24 @@ var UICtrl = (function () {
                             if (finding.name === chosenFinding) {
                                 var subAnatomies = finding["Subanatomy"];
 
+                                // Old Implementation //
                                 // Go through current element's class siblings and update setupSubanatomy
-                                var currentClassInputs = document.querySelectorAll('input' + inputClass);
-                                currentClassInputs.forEach(function (input) {
-                                    if (input.id.includes('attribute_num_2')) {
-                                        UICtrl.setupSubAnatomy(subAnatomies, input);
+                                // var currentClassInputs = document.querySelectorAll('input' + inputClass);
+                                // currentClassInputs.forEach(function (input) {
+                                //     if (input.id.includes('attribute_num_2')) {
+                                //         UICtrl.setupSubAnatomy(subAnatomies, input);
+                                //     }
+                                // });
+                                // Old Implementation //
+
+                                // New Implementation //
+                                var inputs = $(inputClass + ' :input[id*="attribute_num_2"]');
+                                for (var i = 0; i < inputs.length; i++) {
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_2') {
+                                        UICtrl.setupSubAnatomy(subAnatomies, inputs[i]);
                                     }
-                                });
+                                }
+                                // New Implementation //
                             }
                         });
                     }
@@ -508,14 +560,25 @@ var UICtrl = (function () {
                             if (element.name === majorAnatomy) {
                                 var findings = element["Findings"];
 
+                                // Old Implementation //
                                 // Go through current element's class elements (which are basically siblings)
                                 // and update setupFinding
-                                var currentClassEls = document.querySelectorAll('input' + inputClass);
-                                currentClassEls.forEach(function (el) {
-                                    if (el.id.includes('attribute_num_1')) {
-                                        UICtrl.setupFindings(findings, el);
+                                // var currentClassEls = document.querySelectorAll('input' + inputClass);
+                                // currentClassEls.forEach(function (el) {
+                                //     if (el.id.includes('attribute_num_1')) {
+                                //         UICtrl.setupFindings(findings, el);
+                                //     }
+                                // });
+                                // Old Implementation //
+
+                                // New Implementation //
+                                var inputs = $(inputClass + ' :input[id*="attribute_num_1"]');
+                                for (var i = 0; i < inputs.length; i++) {
+                                    if (inputs[i].id === inputEl.className + 'attribute_num_1') {
+                                        UICtrl.setupFindings(findings, inputs[i]);
                                     }
-                                });
+                                }
+                                // New Implementation //
                             }
                         });
                     }
