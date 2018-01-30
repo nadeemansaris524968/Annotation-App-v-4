@@ -24,6 +24,11 @@ input {
   padding: 6px 12px;
 }
 
+.annotation-wrapper {
+  height: 600px;
+  overflow-y: auto;
+}
+
 .buttonsDiv {
   margin: 10px 0;
 }
