@@ -77,13 +77,13 @@ var UICtrl = (function () {
                 var annotationWrapper = document.querySelector('.annotation-wrapper');
                 annotationWrapper.appendChild(findingDiv);
                 
-                // Setup EasyAutocomplete for initial findingDivs
-                if (typeof setupInitialEasyAutocompleteCallback === 'function') {
-                    setupInitialEasyAutocompleteCallback();
-                }
                 // Keeping track of number of findings
                 totalCurrentFindings++;
             });
+            // Setup EasyAutocomplete for initial findingDivs
+            if (typeof setupInitialEasyAutocompleteCallback === 'function') {
+                setupInitialEasyAutocompleteCallback();
+            }
         }
     };
 
