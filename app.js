@@ -177,21 +177,9 @@ var UICtrl = (function () {
                 }
             });
         },
+        // // --------------- --------------- New Method --------------- ---------------
         // After we've created initial findingDivs from setter data
         setupInitialEasyAutocomplete: function () {
-            // Initial easyAutocomplete setup for all anatomy fields in findingDivs
-            // var findingDivsNodeList = document.querySelectorAll('div[class*="finding_num_"]');
-            // findingDivsNodeList.forEach(function (findingDiv) {
-
-            //     var inputElList = document.querySelectorAll('input[id*="attribute_num_"]');
-            //     inputElList.forEach(function (inputEl, index) {
-            //         // Only setting up anatomy input
-            //         // Rest of the fields will be setup onChoose of easyAutocomplete
-            //         if (inputEl.id.includes('attribute_num_0')) {
-            //             UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputEl);
-            //         }
-            //     });
-            // });
             var inputs = $('div[class*="finding_num_"] :input[id*="attribute_num_0"]');
             for (var i = 0; i < inputs.length; i++) {
                 UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputs[i]);
@@ -385,7 +373,8 @@ var UICtrl = (function () {
                 triggerFocus(inputId);
             });
         },
-        // Turning Subanatomy input to easyAutocomplet
+        // --------------- --------------- UPDATED --------------- ---------------
+        // Turning Subanatomy input to easyAutocomplete
         setupSubAnatomy: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
             var inputClass = '.' + inputEl.className;
@@ -490,6 +479,7 @@ var UICtrl = (function () {
                 triggerFocus(inputId);
             });;
         },
+        // --------------- --------------- UPDATED --------------- ---------------
         // Turning Finding input to easyAutocomplete
         setupFindings: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
@@ -537,6 +527,7 @@ var UICtrl = (function () {
                 triggerFocus(inputId);
             });;
         },
+        // --------------- --------------- UPDATED --------------- ---------------
         // Turning Anatomy input to easyAutocomplete
         // onChoose others will be setup
         setupAnatomy: function (searchData, inputEl) {
