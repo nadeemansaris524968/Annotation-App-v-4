@@ -218,9 +218,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -241,9 +241,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -264,9 +264,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -287,9 +287,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -310,9 +310,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -333,9 +333,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -356,9 +356,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -379,9 +379,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
@@ -402,9 +402,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     onLoadEvent: function () {
                         UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                     },
@@ -426,9 +426,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: 'name',
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onChooseEvent: function () {
                         var choseSubAnatomy = $(inputId).val();
@@ -532,9 +532,9 @@ var UICtrl = (function () {
                 data: searchData,
                 getValue: 'name',
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onChooseEvent: function () {
                         var chosenFinding = $(inputId).val();
@@ -584,9 +584,9 @@ var UICtrl = (function () {
                 },
                 getValue: "name",
                 list: {
-                    match: {
-                        enabled: true
-                    },
+                    // match: {
+                    //     enabled: true
+                    // },
                     maxNumberOfElements: 50,
                     onChooseEvent: function () {
                         var majorAnatomy = $(inputId).val();
