@@ -24,7 +24,7 @@ var UICtrl = (function () {
         attributeNumId: 'attribute_num_',
         addBtnId: '#addBtn',
         saveAllBtn: '#saveAllBtn'
-    }
+    };
 
     var createAttriveDiv = function (attribute, findingNumClass, attributeNumId) {
         var attributeDiv = document.createElement('div');
@@ -49,6 +49,7 @@ var UICtrl = (function () {
         return attributeDiv;
     };
 
+    // --------------- --------------- UPDATED --------------- ---------------    
     var createFindingsDivs = function (findings, setupInitialEasyAutocompleteCallback) {
         if (findings.length > 0) {
             findings.forEach(function (eachFinding, findingIndex) {
