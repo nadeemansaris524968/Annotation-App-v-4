@@ -188,18 +188,25 @@ var UICtrl = (function () {
         },
         // --------------- --------------- New Method --------------- ---------------
         // Hides autocomplete lis fort a given inputEl
-        hideList: function (inputEl) {
-            var eacStr = 'eac-container-';
-            var eacDivDOMString = '#' + eacStr + inputEl.id;
-            $(eacDivDOMString).hide();
-        },
+        // hideList: function (inputEl) {
+        //     var eacStr = 'eac-container-';
+        //     var eacDivDOMString = '#' + eacStr + inputEl.id;
+        //     $(eacDivDOMString).hide();
+        // },
         // --------------- --------------- New Method --------------- ---------------
         // Checks the autocomplete list if there is only one value available
         // then set that as default input value
+        /*
         singleOptionCheck: function (searchData, inputEl, hideListCallback) {
             if (searchData.length < 2) {
                 inputEl.setAttribute('value', searchData[0]["name"]);
                 hideListCallback(inputEl);
+            }
+        },
+        */
+        singleOptionCheck: function (searchData, inputEl) {
+            if (searchData.length < 2) {
+                inputEl.setAttribute('value', searchData[0]["name"]);
             }
         },
         setupEventListeners: function () {
@@ -223,7 +230,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -246,7 +254,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -269,7 +278,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -292,7 +302,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -315,7 +326,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -338,7 +350,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -361,7 +374,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -384,7 +398,8 @@ var UICtrl = (function () {
                     // },
                     maxNumberOfElements: 50,
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -406,7 +421,8 @@ var UICtrl = (function () {
                     //     enabled: true
                     // },
                     onLoadEvent: function () {
-                        UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
                     },
                     maxNumberOfElements: 50
                 },
@@ -430,6 +446,10 @@ var UICtrl = (function () {
                     //     enabled: true
                     // },
                     maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
+                    },
                     onChooseEvent: function () {
                         var choseSubAnatomy = $(inputId).val();
                         searchData.find(function (subAnatomy) {
@@ -536,6 +556,10 @@ var UICtrl = (function () {
                     //     enabled: true
                     // },
                     maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
+                    },
                     onChooseEvent: function () {
                         var chosenFinding = $(inputId).val();
                         searchData.find(function (finding) {
@@ -588,6 +612,10 @@ var UICtrl = (function () {
                     //     enabled: true
                     // },
                     maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
+                        UICtrl.singleOptionCheck(searchData, inputEl);
+                    },
                     onChooseEvent: function () {
                         var majorAnatomy = $(inputId).val();
 
