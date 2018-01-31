@@ -178,12 +178,35 @@ var UICtrl = (function () {
                 }
             });
         },
-        // // --------------- --------------- New Method --------------- ---------------
+        // --------------- --------------- New Method --------------- ---------------
         // After we've created initial findingDivs from setter data
         setupInitialEasyAutocomplete: function () {
             var inputs = $('div[class*="finding_num_"] :input[id*="attribute_num_0"]');
             for (var i = 0; i < inputs.length; i++) {
                 UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputs[i]);
+            }
+        },
+        // --------------- --------------- New Method --------------- ---------------
+        // Hides autocomplete list a given inputEl
+        hideList: function (inputEl) {
+            var eacStr = 'eac-container-';
+            var eacDivDOMString = '#' + eacStr + inputEl.id;
+            var eacDivDOM = $(eacDivDOMString);
+            eacDivDOM.hide();
+            // console.log($(eacDivDOMString).);
+        },
+        // --------------- --------------- New Method --------------- ---------------
+        // Checks the autocomplete list if the only value available is NA and sets input
+        // to NA
+        checkListForNA: function (searchData, inputEl, hideListCallback) {
+            if (searchData.length < 2) {
+                if (searchData[0]["name"] === 'NA' ||
+                    searchData[0]["name"] === 'Measure:' ||
+                    searchData[0]["name"] === 'Measures:') {
+                    inputEl.setAttribute('value', searchData[0]["name"]);
+                    hideListCallback(inputEl);
+                }
+
             }
         },
         setupEventListeners: function () {
@@ -205,7 +228,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -225,7 +251,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -245,7 +274,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -265,7 +297,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -285,7 +320,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -305,7 +343,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -325,7 +366,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -345,7 +389,10 @@ var UICtrl = (function () {
                     match: {
                         enabled: true
                     },
-                    maxNumberOfElements: 50
+                    maxNumberOfElements: 50,
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
+                    }
                 },
                 theme: "square"
             };
@@ -364,6 +411,9 @@ var UICtrl = (function () {
                 list: {
                     match: {
                         enabled: true
+                    },
+                    onLoadEvent: function () {
+                        UICtrl.checkListForNA(searchData, inputEl, UICtrl.hideList);
                     },
                     maxNumberOfElements: 50
                 },
