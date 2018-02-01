@@ -139,7 +139,7 @@ var UICtrl = (function () {
             // *************** No need to decrement when deleting a new finding or an old one ***************
             totalCurrentFindings++;
         },
-        // Getter
+        // Getter // --------------- --------------- UPDATED --------------- ---------------
         getAllFindings: function (callBack) {
             // Going through all findingsDiv with class finding_num_x
             var findingsParentArray = [];
@@ -147,21 +147,30 @@ var UICtrl = (function () {
 
             findingsDivNodeList.forEach(function (finding) {
                 // Grabbing all input fields from each findingsDiv
+                console.log('Finding Div: ', finding);
                 var inputNodeList = $(finding).find('input');
+                var isAttributeEmpty = false;
                 var findingsChildArray = [];
 
                 for (var i = 0; i < inputNodeList.length; i++) {
+                    console.log('Input: ', inputNodeList[i]);
                     var key = inputNodeList[i].name;
                     var value = inputNodeList[i].value;
-                    var attributeObj = { Key: key, Value: value };
-                    /*[
-                        { Key: 'Major Anatomy', Value: 'Lungs' },
-                        { Key: 'Major Anatomy', Value: 'Lungs' } etc
-                    ]*/
-                    findingsChildArray.push(attributeObj);
+                    if (value !== '') {
+                        /*[
+                           { Key: 'Major Anatomy', Value: 'Lungs' },
+                           { Key: 'Major Anatomy', Value: 'Lungs' } etc
+                       ]*/
+                        var attributeObj = { Key: key, Value: value };
+                        findingsChildArray.push(attributeObj);
+                    } else {
+                        isAttributeEmpty = true;
+                        break;
+                    }
                 }
-
-                findingsParentArray.push(findingsChildArray);
+                if (!isAttributeEmpty) {
+                    findingsParentArray.push(findingsChildArray);
+                }
             });
             // ************** ************** ************** //
             // callBack(findingsParentArray);
@@ -186,14 +195,14 @@ var UICtrl = (function () {
                 UICtrl.setupAnatomy(SearchCtrl.getSearchData(), inputs[i]);
             }
         },
-        // --------------- --------------- New Method --------------- ---------------
+        // --------------- NOT USED --------------- New Method --------------- ---------------
         // Hides autocomplete lis fort a given inputEl
         // hideList: function (inputEl) {
         //     var eacStr = 'eac-container-';
         //     var eacDivDOMString = '#' + eacStr + inputEl.id;
         //     $(eacDivDOMString).hide();
         // },
-        // --------------- --------------- New Method --------------- ---------------
+        // --------------- NOT USED --------------- New Method --------------- ---------------
         // Checks the autocomplete list if there is only one value available
         // then set that as default input value
         /*
