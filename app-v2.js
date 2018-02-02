@@ -98,6 +98,31 @@ var UICtrl = (function () {
     };
 
     return {
+        validate: function (callback) {
+            // Going through all findingsDiv with class finding_num_x
+            var validationResult = false;
+            var findingsDivNodeList = document.querySelectorAll('div[class*="finding_num_"]');
+
+            findingsDivNodeList.forEach(function (finding) {
+                // Grabbing all input fields from each findingsDiv
+                console.log('Finding Div: ', finding);
+                var inputNodeList = $(finding).find('input');
+                var findingsChildArray = [];
+
+                for (var i = 0; i < inputNodeList.length; i++) {
+                    console.log('Input: ', inputNodeList[i]);
+                    var key = inputNodeList[i].name;
+                    var value = inputNodeList[i].value;
+                    if (value === '') {
+                        validationResult = true;
+                        if (typeof callback === 'function') {
+                            callback(validationResult);
+                        }
+                        break;
+                    }
+                }
+            });
+        },
         addNewFinding: function () {
 
             // Create FindingDiv
