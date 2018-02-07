@@ -581,30 +581,39 @@ var UICtrl = (function () {
                                 for (var i = 0; i < inputs.length; i++) {
                                     if (inputs[i].id === inputEl.className + 'attribute_num_3') {
                                         UICtrl.setupLaterality(laterality, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_4') {
                                         UICtrl.setupLocation_1(location_1, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_5') {
                                         UICtrl.setupLocation_2(location_2, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_6') {
                                         UICtrl.setupCharacter_1(character_1, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_7') {
                                         UICtrl.setupCharacter_2(character_2, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_8') {
                                         UICtrl.setupSeverity(severity, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_9') {
                                         UICtrl.setupNumModifier(numModifier, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_10') {
                                         UICtrl.setupSize_1(size_1, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                     if (inputs[i].id === inputEl.className + 'attribute_num_11') {
                                         UICtrl.setupSize_2(size_2, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                 }
                                 // New Implementation
