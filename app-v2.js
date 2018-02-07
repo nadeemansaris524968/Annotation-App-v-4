@@ -251,6 +251,22 @@ var UICtrl = (function () {
         createDivs: function (findings) {
             createFindingsDivs(findings, UICtrl.setupInitialEasyAutocomplete);
         },
+        // --------------- --------------- New Method --------------- ---------------
+        checkInputValue: function (searchData, inputId) {
+            if (searchData) {
+                var searchArray = searchData['Major Anatomic Region'];
+                var inputValue = $(inputId).val();
+                var valueIsPresent = false;
+                for (var i = 0; i < searchArray.length; i++) {
+                    // Lookup major anatomy inputValue in easyAutocomplete searchData
+                    if (inputValue === searchArray[i]['name']) {
+                        valueIsPresent = true;
+                    }
+                }
+                if (!valueIsPresent)
+                    $(inputId).val('');
+            }
+        },
         // Turning Size_2 input to easyAutocomplete
         setupSize_2: function (searchData, inputEl) {
             var inputId = '#' + inputEl.id;
@@ -689,19 +705,7 @@ var UICtrl = (function () {
                 triggerFocus(inputId);
             });
             $(inputId).on('blur', function () {
-                if (searchData) {
-                    var searchArray = searchData['Major Anatomic Region'];
-                    var inputValue = $(this).val();
-                    var valueIsPresent = false;
-                    for (var i = 0; i < searchArray.length; i++) {
-                        // Lookup major anatomy inputValue in easyAutocomplete searchData
-                        if (inputValue === searchArray[i]['name']) {
-                            valueIsPresent = true;
-                        }
-                    }
-                    if (!valueIsPresent)
-                        $(this).val('');
-                }
+                UICtrl.checkInputValue(searchData, inputId);
             });
         }
     };
