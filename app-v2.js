@@ -161,10 +161,15 @@ var UICtrl = (function () {
             UICtrl.setupEasyAutocomplete(findingNumClass);
 
             // Disabling typing on newly generated inputs
-            $('input').on('keydown', function (e) {
-                e.preventDefault();
-                return false;
-            });
+            var str = 'input[class*="' + findingNumClass + '"]';
+            var inputs = document.querySelectorAll(str);
+                // Not selecting the last since last is size modifier 2 input
+            for (var i = 0; i < inputs.length - 1; i++) {
+                $('#'+inputs[i].id).keydown(function(e){
+                    e.preventDefault();
+                    return false;
+                });
+            }
 
             // *************** No need to decrement when deleting a new finding or an old one ***************
             // *************** No need to decrement when deleting a new finding or an old one ***************
