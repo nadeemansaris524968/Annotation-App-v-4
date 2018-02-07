@@ -71,3 +71,9 @@ input {
   overflow-y: auto; 
   overflow-x:hidden; 
 }
+
+.easy-autocomplete-container ul li div {
+  display: block;
+  font-weight: normal;
+  word-break: normal;
+}
