@@ -160,6 +160,12 @@ var UICtrl = (function () {
             // with current findingNumClass (finding_num_x)
             UICtrl.setupEasyAutocomplete(findingNumClass);
 
+            // Disabling typing on newly generated inputs
+            $('input').on('keydown', function (e) {
+                e.preventDefault();
+                return false;
+            });
+
             // *************** No need to decrement when deleting a new finding or an old one ***************
             // *************** No need to decrement when deleting a new finding or an old one ***************
             totalCurrentFindings++;
@@ -246,7 +252,9 @@ var UICtrl = (function () {
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
             $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
-            $('input').keydown(function (e) {
+            
+            // Disabling typing on already generated inputs
+            $('input').on('keydown', function (e) {
                 e.preventDefault();
                 return false;
             });
