@@ -233,11 +233,11 @@ var UICtrl = (function () {
         },
         // --------------- NOT USED --------------- New Method --------------- ---------------
         // Hides autocomplete lis fort a given inputEl
-        // hideList: function (inputEl) {
-        //     var eacStr = 'eac-container-';
-        //     var eacDivDOMString = '#' + eacStr + inputEl.id;
-        //     $(eacDivDOMString).hide();
-        // },
+        /* hideList: function (inputEl) {
+            var eacStr = 'eac-container-';
+            var eacDivDOMString = '#' + eacStr + inputEl.id;
+            $(eacDivDOMString).hide();
+        }, */
         // --------------- NOT USED --------------- New Method --------------- ---------------
         // Checks the autocomplete list if there is only one value available
         // then set that as default input value
@@ -259,10 +259,12 @@ var UICtrl = (function () {
             $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
             
             // Disabling typing on already generated inputs
+            /* 
             $('input').on('keydown', function (e) {
                 e.preventDefault();
                 return false;
-            });
+            }); 
+            */
         },
         // Setter
         createDivs: function (findings) {
