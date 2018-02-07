@@ -105,12 +105,12 @@ var UICtrl = (function () {
 
             findingsDivNodeList.forEach(function (finding) {
                 // Grabbing all input fields from each findingsDiv
-                console.log('Finding Div: ', finding);
+                // console.log('Finding Div: ', finding);
                 var inputNodeList = $(finding).find('input');
                 var findingsChildArray = [];
 
                 for (var i = 0; i < inputNodeList.length; i++) {
-                    console.log('Input: ', inputNodeList[i]);
+                    // console.log('Input: ', inputNodeList[i]);
                     var key = inputNodeList[i].name;
                     var value = inputNodeList[i].value;
                     if (value === '') {
@@ -172,13 +172,13 @@ var UICtrl = (function () {
 
             findingsDivNodeList.forEach(function (finding) {
                 // Grabbing all input fields from each findingsDiv
-                console.log('Finding Div: ', finding);
+                // console.log('Finding Div: ', finding);
                 var inputNodeList = $(finding).find('input');
                 var isAttributeEmpty = false;
                 var findingsChildArray = [];
 
                 for (var i = 0; i < inputNodeList.length; i++) {
-                    console.log('Input: ', inputNodeList[i]);
+                    // console.log('Input: ', inputNodeList[i]);
                     var key = inputNodeList[i].name;
                     var value = inputNodeList[i].value;
                     if (value !== '') {
@@ -199,7 +199,7 @@ var UICtrl = (function () {
             });
             // ************** ************** ************** //
             // callBack(findingsParentArray);
-            console.log(JSON.stringify(findingsParentArray, undefined, 2));
+            // console.log(JSON.stringify(findingsParentArray, undefined, 2));
         },
         // For addFindingButton
         setupEasyAutocomplete: function (inputClass) {
