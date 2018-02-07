@@ -252,14 +252,13 @@ var UICtrl = (function () {
             createFindingsDivs(findings, UICtrl.setupInitialEasyAutocomplete);
         },
         // --------------- --------------- New Method --------------- ---------------
-        checkInputValue: function (searchData, inputId) {
-            if (searchData) {
-                var searchArray = searchData['Major Anatomic Region'];
+        checkInputValue: function (searchList, inputId) {
+            if (searchList) {
                 var inputValue = $(inputId).val();
                 var valueIsPresent = false;
-                for (var i = 0; i < searchArray.length; i++) {
+                for (var i = 0; i < searchList.length; i++) {
                     // Lookup major anatomy inputValue in easyAutocomplete searchData
-                    if (inputValue === searchArray[i]['name']) {
+                    if (inputValue === searchList[i]['name']) {
                         valueIsPresent = true;
                     }
                 }
@@ -290,6 +289,9 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // Turning Size_1 input to easyAutocomplete
         setupSize_1: function (searchData, inputEl) {
@@ -313,6 +315,9 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
             });
         },
         // Turning NumModifier input to easyAutocomplete
@@ -338,6 +343,9 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // Turning Severity input to easyAutocomplete
         setupSeverity: function (searchData, inputEl) {
@@ -361,6 +369,9 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
             });
         },
         // Turning Character_2 input to easyAutocomplete
@@ -386,6 +397,9 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // Turning Character_1 input to easyAutocomplete
         setupCharacter_1: function (searchData, inputEl) {
@@ -409,6 +423,9 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
             });
         },
         // Turning Location_2 input to easyAutocomplete
@@ -434,6 +451,9 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // Turning Location_1 input to easyAutocomplete
         setupLocation_1: function (searchData, inputEl) {
@@ -458,6 +478,9 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // Turning Laterality input to easyAutocomplete
         setupLaterality: function (searchData, inputEl) {
@@ -481,6 +504,9 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
             });
         },
         // --------------- --------------- UPDATED --------------- ---------------
@@ -591,7 +617,10 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
-            });;
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // --------------- --------------- UPDATED --------------- ---------------
         // Turning Finding input to easyAutocomplete
@@ -644,7 +673,10 @@ var UICtrl = (function () {
 
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
-            });;
+            });
+            $(inputId).on('blur', function () {
+                UICtrl.checkInputValue(searchData, inputId);
+            });
         },
         // --------------- --------------- UPDATED --------------- ---------------
         // Turning Anatomy input to easyAutocomplete
@@ -705,7 +737,8 @@ var UICtrl = (function () {
                 triggerFocus(inputId);
             });
             $(inputId).on('blur', function () {
-                UICtrl.checkInputValue(searchData, inputId);
+                var anatomyList = searchData['Major Anatomic Region'];
+                UICtrl.checkInputValue(anatomyList, inputId);
             });
         }
     };
