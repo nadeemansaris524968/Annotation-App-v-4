@@ -1,4 +1,4 @@
-var SearchCtrl = (function() {
+var SearchCtrl = (function () {
   var data = {
     "Major Anatomic Region": [
       {
@@ -3774,7 +3774,7 @@ var SearchCtrl = (function() {
   };
 
   return {
-    getSearchData: function() {
+    getSearchData: function () {
       return data;
     }
   };
