@@ -615,6 +615,7 @@ var UICtrl = (function () {
                                 for (var i = 0; i < inputs.length; i++) {
                                     if (inputs[i].id === inputEl.className + 'attribute_num_2') {
                                         UICtrl.setupSubAnatomy(subAnatomies, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                 }
                                 // New Implementation //
@@ -673,6 +674,7 @@ var UICtrl = (function () {
                                 for (var i = 0; i < inputs.length; i++) {
                                     if (inputs[i].id === inputEl.className + 'attribute_num_1') {
                                         UICtrl.setupFindings(findings, inputs[i]);
+                                        $('#' + inputs[i].id).trigger('focus');
                                     }
                                 }
                                 // New Implementation //
