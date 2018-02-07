@@ -688,6 +688,21 @@ var UICtrl = (function () {
             $(inputId).easyAutocomplete(options).focus(function () {
                 triggerFocus(inputId);
             });
+            $(inputId).on('blur', function () {
+                if (searchData) {
+                    var searchArray = searchData['Major Anatomic Region'];
+                    var inputValue = $(this).val();
+                    var valueIsPresent = false;
+                    for (var i = 0; i < searchArray.length; i++) {
+                        // Lookup major anatomy inputValue in easyAutocomplete searchData
+                        if (inputValue === searchArray[i]['name']) {
+                            valueIsPresent = true;
+                        }
+                    }
+                    if (!valueIsPresent)
+                        $(this).val('');
+                }
+            });
         }
     };
 })();
