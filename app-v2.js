@@ -256,10 +256,18 @@ var UICtrl = (function () {
                 inputEl.setAttribute('value', searchData[0]["name"]);
             }
         },
+        disableTextEntryCheck: function (searchData, inputEl) {
+            if (searchData.length > 0) {
+                var shouldDisable = false;
+                for (var i = 0; i < searchData.length; i++) {
+                    console.log('Name: ', JSON.stringify(searchData[i]['name'], undefined, 2));
+                }
+            }
+        },
         setupEventListeners: function () {
             $(DOMStrings.addBtnId).on('click', UICtrl.addNewFinding);
             $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
-            
+
             // Disabling typing on already generated inputs
             /*
             $('input').on('keydown', function (e) {
@@ -287,6 +295,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -311,6 +320,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -335,6 +345,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -359,6 +370,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -383,6 +395,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -407,6 +420,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -431,6 +445,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -455,6 +470,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     }
                 },
                 theme: "square"
@@ -478,6 +494,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     },
                     maxNumberOfElements: 50
                 },
@@ -504,6 +521,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     },
                     onChooseEvent: function () {
                         var choseSubAnatomy = $(inputId).val();
@@ -623,6 +641,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData, inputEl);
                     },
                     onChooseEvent: function () {
                         var chosenFinding = $(inputId).val();
@@ -680,6 +699,7 @@ var UICtrl = (function () {
                     onLoadEvent: function () {
                         // UICtrl.singleOptionCheck(searchData, inputEl, UICtrl.hideList);
                         UICtrl.singleOptionCheck(searchData, inputEl);
+                        UICtrl.disableTextEntryCheck(searchData['Major Anatomic Region'], inputEl);
                     },
                     onChooseEvent: function () {
                         var majorAnatomy = $(inputId).val();
