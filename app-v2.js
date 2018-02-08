@@ -259,12 +259,10 @@ var UICtrl = (function () {
             $(DOMStrings.saveAllBtn).on('click', UICtrl.getAllFindings);
             
             // Disabling typing on already generated inputs
-            /* 
             $('input').on('keydown', function (e) {
                 e.preventDefault();
                 return false;
-            }); 
-            */
+            });
         },
         // Setter
         createDivs: function (findings) {
