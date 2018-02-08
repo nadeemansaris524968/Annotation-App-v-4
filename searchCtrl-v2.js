@@ -440,7 +440,7 @@ var SearchCtrl = (function () {
               {
                 name: "All Lung Zones",
                 "Laterality Modifier": [
-                  { name: "Left" },
+                  { name: "Bilateral" },
                   { name: "Left" },
                   { name: "Right" }
                 ],
@@ -449,9 +449,6 @@ var SearchCtrl = (function () {
                 "Character Modifiers 1": [{ name: "NA" }],
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [
-                  { name: "Faint" },
-                  { name: "Moderately dense" },
-                  { name: "Very dense" },
                   { name: "Mild" },
                   { name: "Moderate" },
                   { name: "Severe" }
@@ -1233,30 +1230,6 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Paratracheal mass",
-            Subanatomy: [
-              {
-                name: "Paratracheal region",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Non-calcified" },
-                  { name: "Calcified" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
-              }
-            ]
-          },
-          {
             name: "Azygous region enlargement",
             Subanatomy: [
               {
@@ -1283,7 +1256,7 @@ var SearchCtrl = (function () {
               {
                 name: "NA",
                 "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "Superior" }],
+                "Location Modifier 1": [{ name: "Superior" }, { name: "Inferior" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [{ name: "NA" }],
                 "Character Modifiers 2": [{ name: "NA" }],
@@ -1358,7 +1331,7 @@ var SearchCtrl = (function () {
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [
-                  { name: "Cardiothoracic ration:  X%" }
+                  { name: "Cardiothoracic ratio:  X%" }
                 ]
               }
             ]
@@ -1381,7 +1354,7 @@ var SearchCtrl = (function () {
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [
-                  { name: "Cardiothoracic ration:  X%" }
+                  { name: "Cardiothoracic ratio:  X%" }
                 ]
               }
             ]
@@ -1656,7 +1629,7 @@ var SearchCtrl = (function () {
             Subanatomy: [
               {
                 name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
+                "Laterality Modifier": [{ name: "NA" }],
                 "Location Modifier 1": [{ name: "Atrium" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [{ name: "NA" }],
@@ -1677,7 +1650,7 @@ var SearchCtrl = (function () {
             Subanatomy: [
               {
                 name: "Cardiac silhouette",
-                "Laterality Modifier": [{ name: "Left" }],
+                "Laterality Modifier": [{ name: "Right" }],
                 "Location Modifier 1": [{ name: "Atrium" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [{ name: "NA" }],
@@ -1797,6 +1770,88 @@ var SearchCtrl = (function () {
                 "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
+          },
+          {
+            name: "Coronary calcifications",
+            Subanatomy: [
+              {
+                name: "Cardiac silhouette",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mass/Nodule",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "Superior" }, { name: "Inferior" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              },
+              {
+                name: "Paratracheal region",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Non-calcified" },
+                  { name: "Calcified" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Pneumomediastinum",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
           }
         ]
       },
@@ -1820,7 +1875,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1841,7 +1896,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1862,7 +1917,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1883,7 +1938,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1904,7 +1959,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1933,7 +1988,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1958,7 +2013,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -1983,7 +2038,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -2008,7 +2063,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -2037,7 +2092,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -2062,7 +2117,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
@@ -2087,7 +2142,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "Measures:" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           }
@@ -2167,7 +2222,7 @@ var SearchCtrl = (function () {
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [
                   { name: "Small" },
-                  { name: "Medium" },
+                  { name: "Moderate" },
                   { name: "Large" }
                 ],
                 "Size Modifiers Quantitative": [{ name: "measures:" }]
@@ -2905,7 +2960,7 @@ var SearchCtrl = (function () {
                 ],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Cobb angle Measure:" }]
+                "Size Modifiers Quantitative": [{ name: "Cobb angle measures:" }]
               },
               {
                 name: "Thoracic spine",
@@ -2924,7 +2979,7 @@ var SearchCtrl = (function () {
                 ],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Cobb angle Measure:" }]
+                "Size Modifiers Quantitative": [{ name: "Cobb angle measures:" }]
               },
               {
                 name: "Lumbar spine",
@@ -2943,7 +2998,7 @@ var SearchCtrl = (function () {
                 ],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "Cobb angle Measure:" }]
+                "Size Modifiers Quantitative": [{ name: "Cobb angle measures:" }]
               }
             ]
           },
@@ -3034,12 +3089,12 @@ var SearchCtrl = (function () {
                 "Laterality Modifier": [{ name: "NA" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
+                "Character Modifiers 1": [
                   { name: "Situs inversus" },
                   { name: "Situs indeterminus" }
                 ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
@@ -3314,7 +3369,7 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
@@ -3496,7 +3551,11 @@ var SearchCtrl = (function () {
             Subanatomy: [
               {
                 name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
+                "Laterality Modifier": [
+                  { name: "NA" }, 
+                  { name: "Left" }, 
+                  { name: "Right" }
+                ],
                 "Location Modifier 1": [
                   { name: "Esophageal hiatus" },
                   { name: "Morgagni" },
@@ -3572,8 +3631,8 @@ var SearchCtrl = (function () {
             name: "Mediastinal clips",
             Subanatomy: [
               {
-                name: "Breast",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [
@@ -3593,7 +3652,7 @@ var SearchCtrl = (function () {
             Subanatomy: [
               {
                 name: "NA",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
+                "Laterality Modifier": [{ name: "NA" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [
