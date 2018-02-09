@@ -199,7 +199,7 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Bronchiectesis",
+            name: "Bronchiectasis",
             Subanatomy: [
               {
                 name: "Upper Lung Zone",
@@ -746,6 +746,37 @@ var SearchCtrl = (function () {
               },
               {
                 name: "Lower Lung Zone",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Non-cavitary" },
+                  { name: "Thin walled cavity" },
+                  { name: "Thick walled cavity" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Calcified" },
+                  { name: "Non-calcified" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [
+                  { name: "Solitary" },
+                  { name: "Multiple" },
+                  { name: "Numerous miliary" }
+                ],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              },
+              {
+                name: "All Lung Zones",
                 "Laterality Modifier": [
                   { name: "Bilateral" },
                   { name: "Left" },
@@ -3058,10 +3089,415 @@ var SearchCtrl = (function () {
         ]
       },
       {
-        name: "Other",
+        name: "Device position",
+        Findings: [      
+          {
+            name:
+              "Automated implantable cardioverter-defibrillator and lead position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper lead position" },
+                  { name: "Wires looped around pacer" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Cardiac pacemaker and lead position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper lead position" },
+                  { name: "Wires looped around pacer" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Chest tubes position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper position" },
+                  { name: "Too proximal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to chest wall:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Endotracheal tube position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "In right mainstem bronchus" },
+                  { name: "In left mainstem bronchus" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Position relative to the carina:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Feeding tube position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "NA" },
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Position relative to gastroesophageal junction:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Gastrotomy tube position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper position" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Mediastinal drains position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper position" },
+                  { name: "Too proximal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "Number:" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Central line (multi-lumen) position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to left atrium:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Nasogastric tube position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "NA" },
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Position relative to gastroesophageal junction:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "PICC position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "NA" },
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to left atrium:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Central line (single lumen) position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to left atrium:" }
+                ]
+              }
+            ]
+          },
+
+          {
+            name: "Swan-Ganz catheter position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [
+                  { name: "NA" },
+                  { name: "Positioned improperly in:" }
+                ],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to main pulmonary artery:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Tracheostomy tube position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Too proximal" },
+                  { name: "Proper position" },
+                  { name: "Too distal" },
+                  { name: "In right mainstem bronchus" },
+                  { name: "In left mainstem bronchus" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Position relative to the carina:" }
+                ]
+              }
+            ]
+          },
+          {
+            name: "Ventricular shunt catheter position",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [
+                  { name: "Typical position" },
+                  { name: "Improper position" },
+                  { name: "Too proximal" },
+                  { name: "Kinked" }
+                ],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [
+                  { name: "Postion relative to chest wall:" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Other soft tissues",
         Findings: [
           {
-            name: "Abdominal organ enlargement",
+            name: "Hernia",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [
+                  { name: "NA" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
+                "Location Modifier 1": [
+                  { name: "Esophageal hiatus" },
+                  { name: "Morgagni" },
+                  { name: "Bochdalek" },
+                  { name: "Diaphragmatic" }
+                ],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              }
+            ]
+          }, 
+          {
+            name: "Subdiaphragmatic free air",
+            Subanatomy: [
+              {
+                name: "Abdomen",
+                "Laterality Modifier": [
+                  { name: "Left" },
+                  { name: "Right" },
+                  { name: "Bilateral" }
+                ],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              }
+            ]
+          },
+          {
+            name: "Dilated stomach",
             Subanatomy: [
               {
                 name: "Abdomen",
@@ -3102,19 +3538,20 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Aortic stents",
+            name: "Abdominal organ enlargement",
             Subanatomy: [
               {
-                name: "NA",
+                name: "Abdomen",
                 "Laterality Modifier": [{ name: "NA" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical appearance" },
-                  { name: "Atypical appearance" }
-                ],
+                "Character Modifiers 1": [{ name: "NA" }],
                 "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
+                "Severity Modifier": [
+                  { name: "Mild" },
+                  { name: "Moderate" },
+                  { name: "Severe" }
+                ],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
@@ -3122,32 +3559,10 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name:
-              "Automated implantable cardioverter-defibrillator and lead position",
+            name: "Mastectomy",
             Subanatomy: [
               {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper lead position" },
-                  { name: "Wires looped around pacer" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Axillary mass",
-            Subanatomy: [
-              {
-                name: "Axilla",
+                name: "Breast",
                 "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
@@ -3155,20 +3570,16 @@ var SearchCtrl = (function () {
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
           {
-            name: "Axillary masses",
+            name: "Mastectomies",
             Subanatomy: [
               {
-                name: "Axilla",
+                name: "Breast",
                 "Laterality Modifier": [{ name: "Bilateral" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
@@ -3176,24 +3587,20 @@ var SearchCtrl = (function () {
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
           {
-            name: "Axillary surgical clips",
+            name: "Neck subcutaneous emphysema",
             Subanatomy: [
               {
-                name: "Axilla",
+                name: "Neck",
                 "Laterality Modifier": [
-                  { name: "Bilateral" },
                   { name: "Left" },
-                  { name: "Right" }
+                  { name: "Right" },
+                  { name: "Bilateral" }
                 ],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
@@ -3201,62 +3608,11 @@ var SearchCtrl = (function () {
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Breast implant",
-            Subanatomy: [
-              {
-                name: "Breast",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Breast implants",
-            Subanatomy: [
-              {
-                name: "Breast",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Cardiac pacemaker and lead position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper lead position" },
-                  { name: "Wires looped around pacer" }
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
                 ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
@@ -3283,26 +3639,27 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Chest tubes position",
+            name: "Chest wall subcutaneous emphysema",
             Subanatomy: [
               {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
+                name: "Chest wall",
+                "Laterality Modifier": [
+                  { name: "Bilateral" },
+                  { name: "Left" },
+                  { name: "Right" }
+                ],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper position" },
-                  { name: "Too proximal" },
-                  { name: "Kinked" }
-                ],
+                "Character Modifiers 1": [{ name: "NA" }],
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to chest wall:" }
-                ]
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
@@ -3349,15 +3706,11 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Chest wall subcutaneous emphysema",
+            name: "Axillary mass",
             Subanatomy: [
               {
-                name: "Chest wall",
-                "Laterality Modifier": [
-                  { name: "Bilateral" },
-                  { name: "Left" },
-                  { name: "Right" }
-                ],
+                name: "Axilla",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [{ name: "NA" }],
@@ -3369,12 +3722,38 @@ var SearchCtrl = (function () {
                   { name: "Moderate" },
                   { name: "Large" }
                 ],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
               }
             ]
           },
           {
-            name: "Cholecystectomy clips",
+            name: "Axillary masses",
+            Subanatomy: [
+              {
+                name: "Axilla",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [
+                  { name: "Small" },
+                  { name: "Moderate" },
+                  { name: "Large" }
+                ],
+                "Size Modifiers Quantitative": [{ name: "measures:" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Implant/Hardware",
+        Findings: [
+          {
+            name: "Aortic stents",
             Subanatomy: [
               {
                 name: "NA",
@@ -3414,52 +3793,6 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Dilated stomach",
-            Subanatomy: [
-              {
-                name: "Abdomen",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [
-                  { name: "Mild" },
-                  { name: "Moderate" },
-                  { name: "Severe" }
-                ],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Endotracheal tube position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "In right mainstem bronchus" },
-                  { name: "In left mainstem bronchus" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Position relative to the carina" }
-                ]
-              }
-            ]
-          },
-          {
             name: "Epicardial pacing wires",
             Subanatomy: [
               {
@@ -3471,154 +3804,6 @@ var SearchCtrl = (function () {
                   { name: "Typical appearance" },
                   { name: "Atypical appearance" }
                 ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Feeding tube position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Position relative to gastroesophageal junction:" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Gastrointestinal junction surgical clips",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical appearance" },
-                  { name: "Atypical appearance" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Gastrotomy tube position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper position" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Hernia",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [
-                  { name: "NA" }, 
-                  { name: "Left" }, 
-                  { name: "Right" }
-                ],
-                "Location Modifier 1": [
-                  { name: "Esophageal hiatus" },
-                  { name: "Morgagni" },
-                  { name: "Bochdalek" },
-                  { name: "Diaphragmatic" }
-                ],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Lung biopsy sutures",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "Location: " }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mastectomies",
-            Subanatomy: [
-              {
-                name: "Breast",
-                "Laterality Modifier": [{ name: "Bilateral" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "Mastectomy",
-            Subanatomy: [
-              {
-                name: "Breast",
-                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
@@ -3648,7 +3833,7 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Mediastinal drains position",
+            name: "Cholecystectomy clips",
             Subanatomy: [
               {
                 name: "NA",
@@ -3656,21 +3841,36 @@ var SearchCtrl = (function () {
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper position" },
-                  { name: "Too proximal" },
-                  { name: "Kinked" }
+                  { name: "Typical appearance" },
+                  { name: "Atypical appearance" }
                 ],
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "Number:" }],
+                "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
           {
-            name: "Multi-lumen central line position",
+            name: "Lung biopsy sutures",
+            Subanatomy: [
+              {
+                name: "NA",
+                "Laterality Modifier": [{ name: "NA" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "Location: " }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Gastrointestinal junction surgical clips",
             Subanatomy: [
               {
                 name: "NA",
@@ -3678,58 +3878,60 @@ var SearchCtrl = (function () {
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
                 "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
+                  { name: "Typical appearance" },
+                  { name: "Atypical appearance" }
                 ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
+                "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to left atrium:" }
-                ]
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
           {
-            name: "Nasogastric tube position",
+            name: "Breast implant",
             Subanatomy: [
               {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
+                name: "Breast",
+                "Laterality Modifier": [{ name: "Left" }, { name: "Right" }],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
                 "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Position relative to gastroesophageal junction:" }
-                ]
+                "Size Modifiers Quantitative": [{ name: "NA" }]
               }
             ]
           },
           {
-            name: "Neck subcutaneous emphysema",
+            name: "Breast implants",
             Subanatomy: [
               {
-                name: "Neck",
+                name: "Breast",
+                "Laterality Modifier": [{ name: "Bilateral" }],
+                "Location Modifier 1": [{ name: "NA" }],
+                "Location Modifier 2": [{ name: "NA" }],
+                "Character Modifiers 1": [{ name: "NA" }],
+                "Character Modifiers 2": [{ name: "NA" }],
+                "Severity Modifier": [{ name: "NA" }],
+                "# Modifiers": [{ name: "NA" }],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
+                "Size Modifiers Quantitative": [{ name: "NA" }]
+              }
+            ]
+          },
+          {
+            name: "Axillary surgical clips",
+            Subanatomy: [
+              {
+                name: "Axilla",
                 "Laterality Modifier": [
+                  { name: "Bilateral" },
                   { name: "Left" },
-                  { name: "Right" },
-                  { name: "Bilateral" }
+                  { name: "Right" }
                 ],
                 "Location Modifier 1": [{ name: "NA" }],
                 "Location Modifier 2": [{ name: "NA" }],
@@ -3737,164 +3939,8 @@ var SearchCtrl = (function () {
                 "Character Modifiers 2": [{ name: "NA" }],
                 "Severity Modifier": [{ name: "NA" }],
                 "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
+                "Size Modifiers Qualitative": [{ name: "NA" }],
                 "Size Modifiers Quantitative": [{ name: "NA" }]
-              }
-            ]
-          },
-          {
-            name: "PICC position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to left atrium:" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Single lumen central line position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to left atrium:" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Subdiaphragmatic free air",
-            Subanatomy: [
-              {
-                name: "Abdomen",
-                "Laterality Modifier": [
-                  { name: "Left" },
-                  { name: "Right" },
-                  { name: "Bilateral" }
-                ],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [{ name: "NA" }],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [
-                  { name: "Small" },
-                  { name: "Moderate" },
-                  { name: "Large" }
-                ],
-                "Size Modifiers Quantitative": [{ name: "measures:" }]
-              }
-            ]
-          },
-          {
-            name: "Swan-Ganz catheter position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [
-                  { name: "Positioned improperly in:" }
-                ],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to main pulmonary artery:" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Tracheostomy tube position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Too proximal" },
-                  { name: "Proper position" },
-                  { name: "Too distal" },
-                  { name: "In right mainstem bronchus" },
-                  { name: "In left mainstem bronchus" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Position relative to the carina" }
-                ]
-              }
-            ]
-          },
-          {
-            name: "Ventricular shunt catheter position",
-            Subanatomy: [
-              {
-                name: "NA",
-                "Laterality Modifier": [{ name: "NA" }],
-                "Location Modifier 1": [{ name: "NA" }],
-                "Location Modifier 2": [{ name: "NA" }],
-                "Character Modifiers 1": [
-                  { name: "Typical position" },
-                  { name: "Improper position" },
-                  { name: "Too proximal" },
-                  { name: "Kinked" }
-                ],
-                "Character Modifiers 2": [{ name: "NA" }],
-                "Severity Modifier": [{ name: "NA" }],
-                "# Modifiers": [{ name: "NA" }],
-                "Size Modifiers Qualitative": [{ name: "NA" }],
-                "Size Modifiers Quantitative": [
-                  { name: "Postion relative to chest wall:" }
-                ]
               }
             ]
           }
