@@ -258,18 +258,23 @@ var UICtrl = (function () {
         },
         disableTextEntryCheck: function (searchData, inputEl) {
             if (searchData.length > 0) {
-                var shouldDisable = false;
+                var shouldDisableInput = true;
                 for (var i = 0; i < searchData.length; i++) {
-                    // If autocomplete data doesn't contain ":" it means 
+                    // If autocomplete data doesn't contain an option with ":" eg: "measure:" it means 
                     // text entry can be disabled for the input
-                    if (!searchData[i]['name'].includes(':')) {
-                        var inputId = '#' + inputEl.id;
-                        console.log('Disabling text entry for : ', inputId);
-                        $(inputId).on('keydown', function (e) {
-                            e.preventDefault();
-                            return false;
-                        });
+                    if (searchData[i]['name'].includes(':')) {
+                        shouldDisableInput = false;
                     }
+                }
+                // If shouldDisableInput comes out remaining True, it means no option with ":" was found
+                // and the input can now be disabled
+                if (shouldDisableInput) {
+                    var inputId = '#' + inputEl.id;
+                    console.log('Disabling text entry for : ', inputId);
+                    $(inputId).on('keydown', function (e) {
+                        e.preventDefault();
+                        return false;
+                    });
                 }
             }
         },
