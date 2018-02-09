@@ -260,7 +260,16 @@ var UICtrl = (function () {
             if (searchData.length > 0) {
                 var shouldDisable = false;
                 for (var i = 0; i < searchData.length; i++) {
-                    console.log('Name: ', JSON.stringify(searchData[i]['name'], undefined, 2));
+                    // If autocomplete data doesn't contain ":" it means 
+                    // text entry can be disabled for the input
+                    if (!searchData[i]['name'].includes(':')) {
+                        var inputId = '#' + inputEl.id;
+                        console.log('Disabling text entry for : ', inputId);
+                        $(inputId).on('keydown', function (e) {
+                            e.preventDefault();
+                            return false;
+                        });
+                    }
                 }
             }
         },
