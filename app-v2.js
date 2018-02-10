@@ -256,6 +256,7 @@ var UICtrl = (function () {
                 inputEl.setAttribute('value', searchData[0]["name"]);
             }
         },
+        // --------------- --------------- New Method --------------- ---------------
         disableTextEntryCheck: function (searchData, inputEl) {
             if (searchData.length > 0) {
                 var shouldDisableInput = true;
