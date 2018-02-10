@@ -16,19 +16,30 @@ var UICtrl = (function () {
         { Key: 'Severity Modifier', Value: '' },
         { Key: '# Modifiers', Value: '' },
         { Key: 'Size Modifiers Qualitative', Value: '' },
-        { Key: 'Size Modifiers Quantitative', Value: '' }
+        { Key: 'Size Modifiers Quantitative', Value: '' },
+        { Key: 'Free Form Text', Value: '' } // New object
     ];
 
     var DOMStrings = {
         findingNumClass: 'finding_num_',
         attributeNumId: 'attribute_num_',
         addBtnId: '#addBtn',
-        saveAllBtn: '#saveAllBtn'
+        saveAllBtn: '#saveAllBtn',
+        freeTextDiv: 'freeTextDiv', // New line - Testing
+        freeTextInput: 'freeTextInput' // New line - Testing
     };
 
     var createAttriveDiv = function (attribute, findingNumClass, attributeNumId) {
         var attributeDiv = document.createElement('div');
-        attributeDiv.classList.add('divAttribute');
+        // attributeDiv.classList.add('divAttribute');
+
+        // New line - Testing
+        if (attribute.Key === 'Free Form Text') {
+            // freeTextDiv is a css class that like divAttribute
+            attributeDiv.classList.add(DOMStrings.freeTextDiv);
+        } else {
+            attributeDiv.classList.add('divAttribute');
+        }
 
         var attributeHeading = document.createElement('div');
         attributeHeading.style.fontSize = '8px';
@@ -39,6 +50,11 @@ var UICtrl = (function () {
         attributeInput.setAttribute('type', 'text');
         attributeInput.setAttribute('value', attribute.Value);
         attributeInput.setAttribute('class', `${findingNumClass}`);
+
+        // New line - Testing
+        if (attribute.Key === 'Free Form Text') {
+            attributeInput.setAttribute('class', DOMStrings.freeTextInput);
+        }
         attributeInput.setAttribute('name', `${attribute.Key}`);
         // All inputs must have unique ids hence appending finding_num_x with attribute_num_x
         attributeInput.setAttribute('id', `${findingNumClass}${attributeNumId}`);
@@ -210,6 +226,7 @@ var UICtrl = (function () {
                     findingsParentArray.push(findingsChildArray);
                 }
             });
+            console.log('All findings: /n', JSON.stringify(findingsParentArray, undefined, 2));
             // ************** ************** ************** //
             // callBack(findingsParentArray);
             // console.log(JSON.stringify(findingsParentArray, undefined, 2));
