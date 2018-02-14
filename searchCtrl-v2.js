@@ -3135,7 +3135,7 @@ var SearchCtrl = (function () {
             ]
           },
           {
-            name: "Chest tubes position",
+            name: "Chest tube position",
             Subanatomy: [
               {
                 name: "NA",
